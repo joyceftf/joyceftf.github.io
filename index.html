@@ -1,1 +1,627 @@
-site en construction
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="anime.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script type="module" src="index.js"></script>
+    <title>Joyce Foo Tam Fong — Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><span>Joyce</span>
+                <br>Foo Tam Fong</a>
+        </div>
+        <div class="menu-items">
+            <div class="internship">
+                <a href="mailto:joyftf@outlook.fr">
+                    joyftf@outlook.fr</a>
+                <p>GMT+1 Paris</p>
+            </div>
+
+            <div class="menu" onclick="menuOpen()">
+                <span class="menuBtn">
+                    <div id="menuBtnDiv">menu</div>
+                    <div id="menuBtnDiv2">close</div>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <div class="spacer"></div>
+
+    <div class="marquee">
+        <div class="marquee-inner">
+            <div class="marquee-part">
+                Looking for an internship (Summer 2025)
+                <div class="arrow">
+                    <span>&#8593;</span>
+                </div>
+            </div>
+            <div class="marquee-part">
+                Looking for an internship (Summer 2025)
+                <div class="arrow">
+                    <span>&#8593;</span>
+                </div>
+            </div>
+            <div class="marquee-part">
+                Looking for an internship (Summer 2025)
+                <div class="arrow">
+                    <span>&#8593;</span>
+                </div>
+            </div>
+            <div class="marquee-part">
+                Looking for an internship (Summer 2025)
+                <div class="arrow">
+                    <span>&#8593;</span>
+                </div>
+            </div>
+            <div class="marquee-part">
+                Looking for an internship (Summer 2025)
+                <div class="arrow">
+                    <span>&#8593;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-slider">
+        <div class="nav">
+            <div class="prev">
+                <svg viewBox="0 0 50 9">
+                    <path d="m0 4.5 5-3m-5 3 5 3m45-3h-77"></path>
+                </svg>
+            </div>
+            <div class="next">
+                <svg viewBox="0 0 50 9">
+                    <path d="m0 4.5 5-3m-5 3 5 3m45-3h-77"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="items">
+            <div class="item is-active">
+                <a href="bhansali.html" class="title">
+                    <span>Bhansali</span>
+                </a>
+                <div class="card">
+                    <img src="/img/projects/coffret-bhansali-2024/bhansali-brochure-2.png" alt="" class="card-bg">
+                </div>
+            </div>
+            <div class="item">
+                <a href="untropdesi.html" class="title">
+                    <span>Un trop de Si</span>
+                </a>
+                <div class="card">
+                    <img src="/img/projects/un-trop-de-si-2024/untropdesi.png" alt="" class="card-bg">
+                </div>
+            </div>
+            <div class="item">
+                <a href="frat.html" class="title">
+                    <span>FRAT7YL</span>
+                </a>
+                <div class="card">
+                    <img src="/img/frat7yearslater fev 2024.png" alt="" class="card-bg">
+                </div>
+            </div>
+            <div class="item">
+                <a href="latelierdeguilaine.html" class="title">
+                    <span>L'Atelier</span>
+                </a>
+                <div class="card">
+                    <img src="/img/atelier-de-guilaine-landing-page-2.png" alt="" class="card-bg">
+                </div>
+            </div>
+            <div class="item">
+                <a href="clubzinzine.html" class="title">
+                    <span>Club Zinzine</span>
+                </a>
+                <div class="card">
+                    <img src="/img/projects/club-zinzine-2024/wrapped-magazine.png" alt="" class="card-bg">
+                </div>
+            </div>
+            <div class="item">
+                <a href="party-goers.html" class="title">
+                    <span>PARTY GOERS</span>
+                </a>
+                <div class="card">
+                    <img src="/img/projects/party-goers/party-goers-both-11.png" alt="" class="card-bg">
+                </div>
+            </div>
+            <div class="item">
+                <a href="yomama.html" class="title">
+                    <span>Yo Mama</span>
+                </a>
+                <div class="card">
+                    <img src="/img/projects/yo-mama-display.png" alt="" class="card-bg">
+                </div>
+            </div>
+        </div>
+
+        <div class="item-counter">
+            <p><span id="current-item">1</span> &mdash; <span id="total-items">7</span></p>
+        </div>
+    </div>
+
+    <div class="spacer2"></div>
+
+    <div class="projects" id="selected-work">
+        <div class="nav-projects">
+            <div class="nav_wrapper">
+                <div class="nav_description">
+                    <p>selected work</p>
+                    <ul class="nav_list">
+                        <li class="nav_list_item active" data-filter="all">all</li>
+                        <li class="nav_list_item" data-filter="editorial">editorial</li>
+                        <li class="nav_list_item" data-filter="prints">prints</li>
+                        <li class="nav_list_item" data-filter="front">frontend</li>
+                        <li class="nav_list_item" data-filter="photography">photography</li>
+                        <li class="nav_list_item" data-filter="other">other</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="view">
+            <div class="view_wrapper">
+                <script type="module">
+                    import data from './data.js';
+                    const view = document.querySelector('.view');
+                    const viewWrapper = view.querySelector('.view_wrapper');
+
+                            const createHTML = () => {
+                                    data.sort((a, b) => a.title.localeCompare(b.title)).forEach((value) => {
+                                            const getImages = () => {
+                                                const imageSrc = value.images
+                                                .map((image) => `<img class="view_info_media_image" src="${image}" alt="" />`)
+                                                .join('');
+                                            return imageSrc;
+                                            };
+
+                                    const html = `
+                                        <div class="view_item" data-field="${value.field}">
+                                            <a href="${value.link}" class="view_link">
+                                                <div class="view_info">
+                                                    <div class="view_info_text">
+                                                        <span>${value.work}</span>
+                                                        <span>${value.date}</span>
+                                                    </div>
+                                                    <div class="view_info_media">
+                                                        ${getImages()}
+                                                    </div>
+                                                </div>
+                                                <div class="view_text">
+                                                    <h1 class="view_text_title">${value.title}</h1>
+                                                    <h1 class="view_text_field">${value.field}</h1>
+                                                </div>
+                                            </a>
+                                        </div>`;
+
+                                        viewWrapper.insertAdjacentHTML('beforeend', html);
+                                    });
+                            };
+
+                    createHTML();
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <div class="marquee">
+        <div class="marquee-inner">
+            <!-- <div class="marquee-part">
+                Looking for an internship (Summer 2025)
+                <div class="arrow">
+                    <span>&#8593;</span>
+                </div>
+            </div>
+            <div class="marquee-part">
+                Looking for an internship (Summer 2025)
+                <div class="arrow">
+                    <span>&#8593;</span>
+                </div>
+            </div>
+            <div class="marquee-part">
+                Looking for an internship (Summer 2025)
+                <div class="arrow">
+                    <span>&#8593;</span>
+                </div>
+            </div>
+            <div class="marquee-part">
+                Looking for an internship (Summer 2025)
+                <div class="arrow">
+                    <span>&#8593;</span>
+                </div>
+            </div>
+            <div class="marquee-part">
+                Looking for an internship (Summer 2025)
+                <div class="arrow">
+                    <span>&#8593;</span>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <ul class="footer-wrapper">
+                <li><a href="cv.html" id="link-page-footer">curriculum vitae</a></li>
+                <li><a href="mailto:joyftf@outlook.fr">joyftf@outlook.fr</a></li>
+                <li><a href="https://www.instagram.com/shawty.fr/">@shawty.fr</a></li>
+                <li><p>© 2024 Joyce Foo Tam Fong</p></li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+    <div class="menu-container">
+        <div class="menu-container-1">
+            <div class="menu-container-header">
+                <ul>
+                    <li><span><a href="./index.html#selected-work" data-text="all work">all work</a></span></li>
+                    <li><span><a href="cv.html" data-text="cv">curriculum vitae</a></span></li>
+                </ul>
+            </div>
+            <div class="menu-container-footer">
+                <ul>
+                    <li id="h3">highlights</li>
+                    <li><span><a href="bhansali.html" data-text="Bhansali">Bhansali</a></span></li>
+                    <li><span><a href="untropdesi.html" data-text="Un trop de si">Un trop de si</a></span></li>
+                    <li><span><a href="sketchandplay.html" data-text="JO:Sketch&Play">JO: Sketch&Play</a></span></li>
+                    <li><span><a href="atelierdeguilaine.html" data-text="L'Atelier de Guilaine">L‘Atelier de Guilaine</a></span></li>
+                    <li><span><a href="clubzinzine.html" data-text="club zinzine">club zinzine</a></span></li>
+                    <li><span><a href="party-goers.html" data-text="party goers">party goers</a></span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-container-2">
+            <div class="menu-container-header">
+                <ul>
+                    <li id="h3">about</li>
+                    <li id="p">Hello there !
+                        <br>I'm Joyce, a 2nd-year graphic design student at ésad Amiens, France, with a few years‘ experience as a freelance creative and digital artist.
+                        <br>Would love to hear from you if you're interested in collaborating (and having the coolest and most efficient intern ever starting June 2025) &#129305;</li>
+                </ul>
+            </div>
+            <div class="menu-container-footer">
+                <ul>
+                    <li><span><a href="mailto:joyftf@outlook.fr">mail</a></span></li>
+                    <li><span><a href="https://www.instagram.com/shawty.fr/">instagram</a></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let currentScroll = 0;
+        let isScrollingDown = true;
+        let arrows = document.querySelectorAll(".arrow");
+
+        let tween = gsap.to(".marquee-part", {
+            xPercent: -100,
+            repeat: -1,
+            duration: 5,
+            ease: "linear"
+        })
+        .totalProgress(0.5);
+
+        gsap.set(".marquee-inner", {xPercent: -50});
+
+        window.addEventListener("scroll",function(){
+            if(window.pageYOffset > currentScroll){
+                isScrollingDown = true;
+            } else {
+                isScrollingDown = false;
+            }
+            
+            gsap.to(tween, {
+                timeScale: isScrollingDown ? 1 : -1,
+            });
+
+            arrows.forEach((arrow) => {
+                if(isScrollingDown){
+                    arrow.classList.remove("active");
+                } else {
+                    arrow.classList.add("active");
+                }
+            });
+
+            currentScroll = window.pageYOffset;
+        });
+    </script>
+    <script>
+        function init() {
+            let current = 0;
+            let directionForward = true;
+            const items = document.querySelectorAll(".card-slider .items .item");
+            const nextBtn = document.querySelector(".card-slider .next");
+            const prevBtn = document.querySelector(".card-slider .prev");
+
+            const getCurrentItem = () => {
+                return;
+            }
+
+            const getCard = (item) => {
+                return item.querySelector(".card");
+            }
+
+            const getTitle = (item) => {
+                return item.querySelector(".title span");
+            }
+
+            const setItems = () => {
+                items.forEach((item, index) => {
+                    getTitle(item).innerHTML = getTitle(item).textContent.replace(
+                        /\S/g,
+                        "<span class='letter'>$&</span>"
+                    );
+
+                    if (index === current) return;
+
+                    anime.set(getCard(item), {
+                        translateX: "100vw",
+                    });
+
+                    anime.set(getTitle(item).querySelectorAll(".letter"), {
+                        clipPath: "polygon(0 100%,100% 100%, 100% 100%, 0 100%)",
+                    });
+                });
+
+                anime.set(items[current], {
+                    translateX: 0,
+                    opacity: 1,
+                });
+            };
+
+            const animate = {
+                in(item) {
+                    const card = getCard(item);
+                    const title = getTitle(item);
+
+                    const tl = anime.timeline({
+                        duration: 1000,
+                        easing: "easeOutExpo",
+                    });
+
+                    tl.add({
+                        targets: card,
+                        translateX: directionForward ? ["100vw", 0] : ["-100vw", 0],
+                        rotate: [40, 0],
+                    }).add({
+                        targets: title.querySelectorAll(".letter"),
+                        clipPath: [
+                            "polygon(0 0, 100% 0, 100% 0, 0 0)",
+                            "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+                        ],
+                        translateY: directionForward ? ["1em", 0] : ["-1em", 0],
+                        delay: anime.stagger(40),
+                    },
+                        "-=1000"
+                    );
+
+                    return tl;
+                },
+
+                out(item) {
+                    const card = getCard(item);
+                    const title = getTitle(item);
+
+                    const tl = anime.timeline({
+                        duration: 1000,
+                        easing: "cubicBezier(0.86,0,0.07,1)",
+                    });
+
+                    tl.add({
+                        targets: card,
+                        translateX: directionForward ? [0, "100vw"] : [0, "-100vw"],
+                        rotate: [0, -40],
+                    }).add({
+                        targets: title.querySelectorAll(".letter"),
+                        clipPath: [
+                            "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+                            "polygon(0 0, 100% 100%, 100% 100%, 0 100%)",
+                        ],
+                        translateY: directionForward ? [0, "-1em"] : [0, "-1em"],
+                        delay: anime.stagger(40),
+                    },
+                        "-=1000"
+                    );
+
+                    return tl;
+                },
+            };
+
+            function updateClasses() {
+                items.forEach((item, index) => {
+                    if (index == current) {
+                        item.classList.add("is-active");
+                    } else {
+                        item.classList.remove("is-active");
+                    }
+                });
+            }
+
+            function next() {
+                if (!directionForward) {
+                    directionForward = !directionForward;
+                }
+
+                animate.out(items[current]);
+                current = (current + 1) % items.length;
+                setTimeout(function () {
+                    animate.in(items[current]);
+                }, 500);
+                updateClasses();
+            }
+
+            function prev() {
+                if (directionForward) {
+                    directionForward = !directionForward;
+                }
+
+                animate.out(items[current]);
+                current = (current - 1 + items.length) % items.length;
+                setTimeout(function () {
+                    animate.in(items[current]);
+                }, 500);
+                updateClasses();
+            }
+
+            nextBtn.addEventListener("click", next);
+            prevBtn.addEventListener("click", prev);
+
+            setItems();
+        }
+
+        document.addEventListener("DOMContentLoaded", init);
+        
+    </script>
+
+    <script>
+        const menu_open = gsap.timeline({
+            paused: true,
+            reversed: true,
+        });
+        menu_open.to(".menu-container", {
+            display:"flex",
+        });
+        menu_open.to("#menuBtnDiv", {
+            duration:0.2,
+            y:50,
+        });
+        menu_open.fromTo("#menuBtnDiv2", {
+            duration: 0.2,
+            y: -110,
+        }, {
+            y: -50,
+        },
+        "-=0.15"
+        );
+        menu_open.from(".menu-container-1", {
+            duration: .5,
+            y: "100%",
+        },
+        "-=0.5"
+        );
+        menu_open.from(".menu-container-1 .menu-container-header li span, .menu-container-1 .menu-container-footer li span", 
+        { stagger: {
+            amount: 0.15,
+            },
+            y: 100,
+            duration: 0.5,
+        },
+        "-=0.1"
+    );
+    menu_open.from(".menu-container-2", {
+        duration: .5,
+        y: "-100%",
+    }, "-=1");
+    menu_open.from(".menu-container-2 .menu-container-footer li span", 
+        { stagger: {
+            amount: 0.15,
+            },
+            y: 100,
+            duration: 0.5,
+        }, "-=0.5");
+    menu_open.from("#h3, #p", 
+        { opacity: 0,
+            duration: 0.5,
+        }, "-=0.5");
+    </script>
+
+<script>
+    function lockScroll() {
+        document.body.classList.add('lock-scroll');
+    }
+
+    function unlockScroll() {
+        document.body.classList.remove('lock-scroll');
+    }
+
+    function menuOpen() {
+        menu_open.reversed() ? menu_open.play() : menu_open.reverse();
+        if (menu_open.reversed()) {
+            unlockScroll(); // Unlock scrolling when the menu is closed
+        } else {
+            lockScroll();
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+
+            setTimeout(unlockScroll, 1000); // Adjust the timeout as needed
+        });
+    });
+    
+    document.querySelector('a[href="./index.html#selected-work"]').addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector('#selected-work').scrollIntoView({
+            behavior: 'smooth'
+        });
+        setTimeout(function() {
+            unlockScroll();
+            menu_open.reverse(); // Close the menu after scrolling
+        }, 500);
+    });
+</script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const currentItemElement = document.getElementById("current-item");
+        const totalItemsElement = document.getElementById("total-items");
+        const items = document.querySelectorAll(".card-slider .items .item");
+        const nextBtn = document.querySelector(".card-slider .next");
+        const prevBtn = document.querySelector(".card-slider .prev");
+        let current = 0;
+
+        totalItemsElement.textContent = items.length;
+
+        function updateCounter() {
+            currentItemElement.textContent = current + 1;
+        }
+
+        function next() {
+            current = (current + 1) % items.length;
+            updateCounter();
+        }
+
+        function prev() {
+            current = (current - 1 + items.length) % items.length;
+            updateCounter();
+        }
+
+        nextBtn.addEventListener("click", next);
+        prevBtn.addEventListener("click", prev);
+
+        updateCounter();
+    });
+</script>
+
+
+
+</body>
+
+</html>
