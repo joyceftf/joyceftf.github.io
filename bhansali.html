@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="anime.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="/minified/ScrollToPlugin.min.js"></script>
+    <title>Joyce Foo Tam Fong — Bhansali</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><span>Joyce</span>
+                <br>Foo Tam Fong</a>
+        </div>
+        <div class="menu-items">
+            <div class="internship">
+                <a href="mailto:joyftf@outlook.fr">
+                    joyftf@outlook.fr</a>
+                <p>GMT+1 Paris</p>
+            </div>
+
+            <div class="menu" onclick="menuOpen()">
+                <span class="menuBtn">
+                    <div id="menuBtnDiv">menu</div>
+                    <div id="menuBtnDiv2">close</div>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    
+    <div class="page-container">
+        <div class="map">
+            <div class="s-1 active">
+                <a href="/bhansali.html#section-1"><p>intro</p></a>
+            </div>
+            <div class="s-2">
+                <a href="/bhansali.html#section-2"><p>approach</p></a>
+            </div>
+            <div class="s-3">
+                <a href="/bhansali.html#section-3"><p>work</p></a>
+            </div>
+            <div class="s-4">
+                <a href="/bhansali.html#section-4"><p>credits</p></a>
+            </div>
+        </div>
+
+        <div class="sections">
+            <div class="section-1 sec" id="section-1">
+                <div class="section-header active">
+                    <p>Bhansali</p>
+                    <p>introduction</p>
+                </div>
+                <div class="copy">
+                    <h2>Bhansali</h2>
+                    <ul class="tags-wrapper">
+                        <li><h3 class="tag">Art direction</h3></li>
+                        <li><h3 class="tag">Editorial</h3></li>
+                    </ul>
+                    <p>Sanjay Leela Bhansali is an uniquely groundbreaking filmmaker and music composer in the Bollywood industry. His work is renowned for its grandeur, opulence, and emotional depth, and each movie he produces remains a visual and auditory spectacle that leaves a lasting impression on the audience, and made possible mainly through production design and Bhansali's own sharp attention to detail.
+                        <br>This editorial project is a tribute to his filmography and cinematic style, and is comprised of one main compartiment focusing on production design, Hindi cinema and Bollywood to then introduce Bhansali's craft and contribution to the industry through a curated book, brochure, poster and a set of postcards and stickers. To tie together all of these elements, few iconic movies of his such as Devdas and Goliyon Ki Raasleela Ram-Leela are presented and analyzed next, including a book alongside its movie review card, a poster and a set of stickers each. Designed to be a collector's item for fans of S.L. Bhansali's work as well as a vivid celebration of his contribution to Indian cinema, this exclusive box set was part of the collective exhibition <i>Converser</i> that took place in the gallery of ésad Amiens in from May 13th to June 4th 2023.</p>
+                    <br>
+                    <div class="copy-display">
+                        <div class="visual display"></div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="section-2 sec" id="section-2">
+                <div class="section-header">
+                    <p>Bhansali</p>
+                    <p>approach</p>
+                </div>
+                <div class="copy">
+                    <h4>In pursue of character and passion</h4>
+                    <br>
+                    <p>Every aspect of this project came to life with the intention of mirroring Bhansali's visual meticulousness and lush sensibility on set and on screen, through his use of historical and cultural references, colors and ornemental details with a twist of modernity and contemporaneity — by implementing both hand-drawn illustrations and halftone images, by laser printing each object while die-cutting the brochure and the movie books softcovers by hand, by delineating sections with different color paper stocks with a lavish palette of earth tones, rich reds and a particular golden yellow to reinforce its deluxe production.</p>
+                </div>
+            </div>
+            <div class="section-3 sec" id="section-3">
+                <div class="section-header">
+                    <p>Bhansali</p>
+                    <p>work</p>
+                </div>
+                <div class="copy grid-gallery">
+                    <div class="copy-gallery">
+                        <div class="visual" id="twovisuals">
+                            <div class="modal" id="modal">
+                                <div class="modal-content" id="modal-img"></div>
+                            </div>
+                        </div>
+                        <div class="visual" id="twovisuals">
+                            <div class="modal" id="modal">
+                                <div class="modal-content" id="modal-img"></div>
+                            </div>
+                        </div>
+                        <div class="visual">
+                            <div class="modal" id="modal">
+                                <div class="modal-content" id="modal-img"></div>
+                            </div>
+                        </div>
+                        <div class="visual">
+                            <div class="modal" id="modal">
+                                <div class="modal-content" id="modal-img"></div>
+                            </div>
+                        </div>
+                        <div class="visual">
+                            <div class="modal" id="modal">
+                                <div class="modal-content" id="modal-img"></div>
+                            </div>
+                        </div>
+                        <div class="visual">
+                            <div class="modal" id="modal">
+                                <div class="modal-content" id="modal-img"></div>
+                            </div>
+                        </div>
+                        <div class="visual" id="twovisuals">
+                            <div class="modal" id="modal">
+                                <div class="modal-content" id="modal-img"></div>
+                            </div>
+                        </div>
+                        <div class="visual" id="twovisuals">
+                            <div class="modal" id="modal">
+                                <div class="modal-content" id="modal-img"></div>
+                            </div>
+                        </div>
+                        <div class="visual">
+                            <div class="modal" id="modal">
+                                <div class="modal-content" id="modal-img"></div>
+                            </div>
+                        </div>
+                        <div class="visual">
+                            <div class="modal" id="modal">
+                                <div class="modal-content" id="modal-img"></div>
+                            </div>
+                        </div>
+                        <div class="visual">
+                            <div class="modal" id="modal">
+                                <div class="modal-content" id="modal-img"></div>
+                            </div>
+                        </div>
+                        <div class="visual">
+                            <div class="modal" id="modal">
+                                <div class="modal-content" id="modal-img"></div>
+                            </div>
+                        </div>
+                        <div class="visual" id="twovisuals">
+                            <div class="modal" id="modal">
+                                <div class="modal-content" id="modal-img"></div>
+                            </div>
+                        </div>
+                        <div class="visual" id="twovisuals">
+                            <div class="modal" id="modal">
+                                <div class="modal-content" id="modal-img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button onclick="myFunction()" id="btn-more">Load more</button>
+                
+                    <div class="copy-gallery-2">
+                        <span class="more">
+                            <div class="visual">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
+                            <div class="visual">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
+                            <div class="visual" id="twovisuals">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
+                            <div class="visual" id="twovisuals">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
+                            <div class="visual">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
+                            <div class="visual">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
+                            <div class="visual">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
+                            <div class="visual">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
+                            <div class="visual">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
+                            <div class="visual" id="twovisuals">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
+                            <div class="visual" id="twovisuals">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
+                            <div class="visual">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
+                            <div class="visual">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
+                            <div class="visual">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
+                            <div class="visual">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
+                            <div class="visual"  id="twovisuals">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
+                            <div class="visual"  id="twovisuals">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
+                            <div class="visual">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
+                            <div class="visual">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
+                            <div class="visual" id="twovisuals">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
+                            <div class="visual" id="twovisuals">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div id="modal" class="modal">
+                    <div id="modal-content" class="modal-content"></div>
+                </div>
+            </div>
+            <div class="section-4 sec" id="section-4">
+                <div class="section-header">
+                    <p>Bhansali</p>
+                    <p>credits</p>
+                </div>
+                <div class="copy">
+                    <h4>Concept and production</h4>
+                    <br>
+                    <p>Joyce Foo Tam Fong</p>
+                    <br>
+                    <h4>Assets</h4>
+                    <br>
+                    <p>Despair Display by Misha Ivanov, Hinglish by Shirin Johari</p>
+                    <p>Movie stills from Eros Now and Bhansali Productions</p>
+                    <p>Illustrative assets by Joyce Foo Tam Fong</p>
+                    <p>Name</p>
+                </div>
+            </div>
+            <a href="./index.html#selected-work" class="page-footer">GO BACK TO PROJECTS</a>
+            <div class="page-whitespace"></div>
+        </div>
+    </div>
+
+
+
+ <div class="menu-container">
+        <div class="menu-container-1">
+            <div class="menu-container-header">
+                <ul>
+                    <li><span><a href="./index.html#selected-work" data-text="all work">all work</a></span></li>
+                    <li><span><a href="cv.html" data-text="cv">curriculum vitae</a></span></li>
+                </ul>
+            </div>
+            <div class="menu-container-footer">
+                <ul>
+                    <li id="h3">highlights</li>
+                    <li><span><a href="bhansali.html" data-text="Bhansali">Bhansali</a></span></li>
+                    <li><span><a href="cfl.html" data-text="CFL">Cfl</a></span></li>
+                    <li><span><a href="sketchandplay.html" data-text="sketch&play">sketch&play</a></span></li>
+                    <li><span><a href="bde.html" data-text="bde 2024">bde 2024</a></span></li>
+                    <li><span><a href="clubzinzine.html" data-text="club zinzine">club zinzine</a></span></li>
+                    <li><span><a href="party-goers.html" data-text="party goers">party goers</a></span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-container-2">
+            <div class="menu-container-header">
+                <ul>
+                    <li id="h3">about</li>
+                    <li id="p">Hello there !
+                        <br>I'm Joyce, a 2nd-year graphic design student at ésad Amiens, France, with a few years' experience as a freelance creative and digital artist.
+                        <br>Would love to hear from you if you're interested in collaborating (and having the coolest and most efficient intern ever) &#129305;</li>
+                </ul>
+            </div>
+            <div class="menu-container-footer">
+                <ul>
+                    <li><span><a href="mailto:joyftf@outlook.fr">mail</a></span></li>
+                    <li><span><a href="https://www.instagram.com/shawty.fr/">instagram</a></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<style>
+
+</style>
+
+
+
+
+ <script>
+        let currentScroll = 0;
+        let isScrollingDown = true;
+        let arrows = document.querySelectorAll(".arrow");
+
+        let tween = gsap.to(".marquee-part", {
+            xPercent: -100,
+            repeat: -1,
+            duration: 5,
+            ease: "linear"
+        })
+        .totalProgress(0.5);
+
+        gsap.set(".marquee-inner", {xPercent: -50});
+
+        window.addEventListener("scroll",function(){
+            if(window.pageYOffset > currentScroll){
+                isScrollingDown = true;
+            } else {
+                isScrollingDown = false;
+            }
+            
+            gsap.to(tween, {
+                timeScale: isScrollingDown ? 1 : -1,
+            });
+
+            arrows.forEach((arrow) => {
+                if(isScrollingDown){
+                    arrow.classList.remove("active");
+                } else {
+                    arrow.classList.add("active");
+                }
+            });
+
+            currentScroll = window.pageYOffset;
+        });
+</script>
+
+ <script>
+        const menu_open = gsap.timeline({
+            paused: true,
+            reversed: true,
+        });
+        menu_open.to(".menu-container", {
+            display:"flex",
+        });
+        menu_open.to("#menuBtnDiv", {
+            duration:0.2,
+            y:50,
+        });
+        menu_open.fromTo("#menuBtnDiv2", {
+            duration: 0.2,
+            y:-110,
+        }, {
+            y: -50,
+        },
+        "-=0.15"
+        );
+        menu_open.from(".menu-container-1", {
+            duration: .5,
+            y: "100%",
+        },
+        "-=0.5"
+        );
+        menu_open.from(".menu-container-1 .menu-container-header li span, .menu-container-1 .menu-container-footer li span", 
+        { stagger: {
+            amount: 0.15,
+            },
+            y: 100,
+            duration: 0.5,
+        },
+        "-=0.1"
+    );
+    menu_open.from(".menu-container-2", {
+        duration: .5,
+        y: "-100%",
+    }, "-=1");
+    menu_open.from(".menu-container-2 .menu-container-footer li span", 
+        { stagger: {
+            amount: 0.15,
+            },
+            y: 100,
+            duration: 0.5,
+        }, "-=0.5");
+    menu_open.from("#h3, #p", 
+        { opacity: 0,
+            duration: 0.5,
+        }, "-=0.5");
+    function menuOpen(){
+            menu_open.reversed()? menu_open.play(): menu_open.reverse();
+        }
+</script>
+
+<script>
+    function lockScroll() {
+        document.body.classList.add('lock-scroll');
+    }
+
+    function unlockScroll() {
+        document.body.classList.remove('lock-scroll');
+    }
+
+    function menuOpen() {
+        menu_open.reversed() ? menu_open.play() : menu_open.reverse();
+        if (menu_open.reversed()) {
+            unlockScroll();
+        } else {
+            lockScroll();
+        }
+    }
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const rows = document.querySelectorAll(".row");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target.querySelector("img");
+                    if (entry.target.querySelector(".left")) {
+                        gsap.to(img, {
+                            clipPath: "polygon(0 0,100% 0, 100% 100%, 0 100%)",
+                        });
+                    } else {
+                        gsap.to(img, {
+                            clipPath: "polygon(0 0,100% 0, 100% 100%, 0 100%)",
+                        });
+                    }
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        rows.forEach(row => observer.observe(row));
+
+        gsap.utils.toArray(".img-container.right img").forEach((img) => {
+            gsap.fromTo(img, {
+                clipPath: "polygon(0 0, 0 0, 0 0, 0 0)",
+            }, {
+                clipPath: "polygon(0 0,100% 0, 100% 100%, 0 100%)",
+                scrollTrigger: {
+                    trigger: img,
+                    start: "top 75%",
+                    end: "bottom 70%",
+                    scrub: true,
+                },
+            });
+        });
+
+        gsap.utils.toArray(".img-container.left img").forEach((img) => {
+            gsap.to(img,{
+                clipPath: "polygon(0 0,100% 0, 100% 100%, 0 100%)",
+                scrollTrigger: {
+                    trigger: img,
+                    start: "top 75%",
+                    end: "bottom 70%",
+                    scrub: true,
+                },
+            });
+        });
+
+        gsap.utils.toArray(".img-container p").forEach((text) => {
+            gsap.to(text,{
+            opacity: 0,
+            y:20,
+            scrollTrigger: {
+                trigger: text,
+                start: "top 60%",
+                toggleActions: "play none none reverse",
+                },
+            });
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const mapDivs = document.querySelectorAll(".map > div");
+        const sectionDivs = document.querySelectorAll(".sections > .sec");
+        const sectionHeights = [];
+        const accumulatedHeights = [];
+        const RATIO = 0.5;
+
+        let accumulatedHeight = 0;
+        sectionDivs.forEach((section) => {
+            const height = section.clientHeight;
+            sectionHeights.push(height * RATIO);
+            accumulatedHeight += height;
+            accumulatedHeights.push(accumulatedHeight);
+        });
+
+        let lastActiveIndex = -1;
+
+        function updateMapHeights(scrollPos) {
+            for (let i = 0; i < accumulatedHeights.length; i++) {
+                if (scrollPos < accumulatedHeights[i]) {
+                    if (lastActiveIndex !== i) {
+                        if (lastActiveIndex >= 0) {
+                            mapDivs[lastActiveIndex].style.height = "6vh";
+                        }
+                        mapDivs[i].style.height = `${sectionHeights[i]}px`;
+                        lastActiveIndex = i;
+                    }
+                    break;
+                }
+            }
+        }
+
+        const sectionTotalHeight = accumulatedHeights[accumulatedHeights.length - 1];
+        const mapTotalHeight = [...mapDivs].reduce((sum, mapDiv) => sum + mapDiv.clientHeight, 0) + (mapDivs.length - 1) * 75;
+        const sectionsScrollableHeight = sectionTotalHeight - window.innerHeight;
+        const mapScrollableHeight = mapTotalHeight - window.innerHeight;
+        const scrollRatio = mapScrollableHeight / sectionsScrollableHeight;
+
+        window.addEventListener("scroll", () => {
+            const scrollPos = window.scrollY;
+            const mapTranslateY = scrollPos * scrollRatio;
+            document.querySelector(".map").style.transform = `translateY(-${mapTranslateY}px)`;
+        
+            updateMapHeights(scrollPos);
+        
+            sectionDivs.forEach((section, index) => {
+                const sectionHeader = section.querySelector(".section-header");
+                const mapDiv = mapDivs[index];
+                if (scrollPos >= accumulatedHeights[index] - section.clientHeight && scrollPos < accumulatedHeights[index]) {
+                    sectionHeader.classList.add("active");
+                    mapDiv.classList.add("active");
+                    mapDiv.style.color = "var(--light-color)";
+                    mapDiv.style.fontWeight = "normal";
+                    sectionHeader.style.fontWeight = "bold";
+                } else {
+                    sectionHeader.classList.remove("active");
+                    mapDiv.classList.remove("active");
+                    mapDiv.style.color = "var(--soft-accent-color)";
+                    mapDiv.style.fontWeight = "lighter";
+                    sectionHeader.style.fontWeight = "normal";
+                }
+            });
+        
+            // Ensure synchronization for section-3
+            const section3 = document.querySelector(".section-3");
+            const section3Header = section3.querySelector(".section-header");
+            const mapDiv3 = document.querySelector(".map .s-3");
+            if (scrollPos >= section3.offsetTop && scrollPos < section3.offsetTop + section3.clientHeight) {
+                section3Header.classList.add("active");
+                mapDiv3.classList.add("active");
+                mapDiv3.style.color = "var(--light-color)";
+                mapDiv3.style.fontWeight = "normal";
+                section3Header.style.fontWeight = "bold";
+            } else {
+                section3Header.classList.remove("active");
+                mapDiv3.classList.remove("active");
+                mapDiv3.style.color = "var(--soft-accent-color)";
+                mapDiv3.style.fontWeight = "lighter";
+                section3Header.style.fontWeight = "normal";
+            }
+
+            // Ensure synchronization for section-4
+            const section4 = document.querySelector(".section-4");
+            const section4Header = section4.querySelector(".section-header");
+            const mapDiv4 = document.querySelector(".map .s-4");
+            if (scrollPos >= section4.offsetTop - window.innerHeight + 40 * window.innerHeight / 100 && scrollPos < section4.offsetTop + section4.clientHeight) {
+                section3Header.classList.remove("active");
+                mapDiv3.classList.remove("active");
+                mapDiv3.style.color = "var(--soft-accent-color)";
+                mapDiv3.style.fontWeight = "lighter";
+                section3Header.style.fontWeight = "normal";
+                mapDiv3.style.height = "6vh";
+                section4Header.classList.add("active");
+                mapDiv4.classList.add("active");
+                mapDiv4.style.color = "var(--light-color)";
+                mapDiv4.style.fontWeight = "normal";
+                section4Header.style.fontWeight = "bold";
+            } else {
+                section4Header.classList.remove("active");
+                mapDiv4.classList.remove("active");
+                mapDiv4.style.color = "var(--soft-accent-color)";
+                mapDiv4.style.fontWeight = "lighter";
+                section4Header.style.fontWeight = "normal";
+            }
+        });
+    });
+</script>
+
+<style>
+.copy-gallery{
+    height: 900vh;
+}
+.copy-gallery-2{
+    height: 1410vh;
+}
+.more{
+    height: 1600vh;
+}
+@media (max-width: 768px) {
+    .copy-gallery{
+        height: 550vh;
+        display: grid;
+    }
+    .copy-gallery-2{
+        height: 800vh;
+    }
+    .more{
+    height: 900vh;
+    }
+}
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const galleryItems = document.querySelectorAll(".visual");
+        const images = [
+            './img/projects/coffret-bhansali-2024/coffret.gif',
+            './img/projects/coffret-bhansali-2024/coffret.jpg',
+            './img/projects/coffret-bhansali-2024/coffret-2.jpg',
+            './img/projects/coffret-bhansali-2024/bhansali-1.jpg',
+            './img/projects/coffret-bhansali-2024/bhansali-cards-3.jpg',
+            './img/projects/coffret-bhansali-2024/bhansali-brochure-4.jpg',
+            './img/projects/coffret-bhansali-2024/expo-brochure-2.jpg',
+            './img/projects/coffret-bhansali-2024/bhansali-book.jpg',
+            './img/projects/coffret-bhansali-2024/bhansali-book-1.jpg',
+            './img/projects/coffret-bhansali-2024/bhansali-book-2.jpg',
+            './img/projects/coffret-bhansali-2024/bhansali-book-7.jpg',
+            './img/projects/coffret-bhansali-2024/bhansali-book-5.jpg',
+            './img/projects/coffret-bhansali-2024/bhansali-stickers.jpg',
+            './img/projects/coffret-bhansali-2024/expo-posters.jpg',
+            './img/projects/coffret-bhansali-2024/expo-coffret-3.jpg',
+
+            './img/projects/coffret-bhansali-2024/devdas.jpg',
+            './img/projects/coffret-bhansali-2024/devdas-poster.jpg',
+            './img/projects/coffret-bhansali-2024/devdas-merch.jpg',
+            './img/projects/coffret-bhansali-2024/devdas-card.jpg',
+            './img/projects/coffret-bhansali-2024/devdas-book.jpg',
+            './img/projects/coffret-bhansali-2024/devdas-book-1.jpg',
+            './img/projects/coffret-bhansali-2024/devdas-book-2.jpg',
+            './img/projects/coffret-bhansali-2024/devdas-book-5.jpg',
+            './img/projects/coffret-bhansali-2024/devdas-book-10.jpg',
+            './img/projects/coffret-bhansali-2024/devdas-stickers.jpg',
+
+            './img/projects/coffret-bhansali-2024/devdas-ramleela-books.jpg',
+            './img/projects/coffret-bhansali-2024/ramleela.jpg',
+            './img/projects/coffret-bhansali-2024/ramleela-poster.jpg',
+            './img/projects/coffret-bhansali-2024/ramleela-book.jpg',
+            './img/projects/coffret-bhansali-2024/ramleela-book-2.jpg',
+            './img/projects/coffret-bhansali-2024/ramleela-book-7.jpg',
+            './img/projects/coffret-bhansali-2024/ramleela-card.jpg',
+            './img/projects/coffret-bhansali-2024/ramleela-stickers-2.jpg',
+        ];
+        
+        galleryItems.forEach((item, index) => {
+            item.style.backgroundImage = `url(${images[index]})`;
+            item.style.backgroundPosition = 'center';
+            item.style.objectFit = 'cover';
+        });
+
+        const btnMore = document.getElementById("btn-more");
+        const copyGallery = document.querySelectorAll(".copy-gallery-2");
+        const more = document.querySelectorAll(".more");
+        const visuals = document.querySelectorAll(".more .visual");
+        let isExpanded = false;
+
+        visuals.forEach(visual => visual.style.display = "none");
+        copyGallery.forEach(item => item.style.display = "none");
+        more.forEach(item => item.style.display = "none");
+        
+        btnMore.addEventListener("click", () => {
+            if (isExpanded) {
+                copyGallery.forEach(item => item.style.display = "none");
+                more.forEach(item => item.style.display = "none");
+                btnMore.textContent = "Load more";
+            } else {
+                copyGallery.forEach(item => item.style.display = "block");
+                more.forEach(item => item.style.display = "grid");
+                visuals.forEach(visual => visual.style.display = "block");
+                btnMore.textContent = "Show less";
+            }
+            isExpanded = !isExpanded;
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="anime.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <title>Joyce Foo Tam Fong — Curriculum vitae</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><span>Joyce</span>
+                <br>Foo Tam Fong</a>
+        </div>
+        <div class="menu-items">
+            <div class="internship">
+                <a href="mailto:joyftf@outlook.fr">
+                    joyftf@outlook.fr</a>
+                <p>GMT+1 Paris</p>
+            </div>
+
+            <div class="menu" onclick="menuOpen()">
+                <span class="menuBtn">
+                    <div id="menuBtnDiv">menu</div>
+                    <div id="menuBtnDiv2">close</div>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <div class="about">
+        <div class="about-hero">
+            <h1 class="about-title"><i>Refreshing</i> visuals
+                <br><i>and intuitive</i> solutions
+                <br><i>for the culture</i> &#x1F44A;
+            </h1>
+            <h2>As a creative and (potential) intern, I'd love to put my design work to the service of both functionality and expressiveness, lisibility and visibility, artistry and creativity.</h2>
+            <h3>dream collaborators</h3>
+            <ul>
+                <li>contemporary artists</li>
+                <li>illustrators</li>
+                <li>music and movie industries</li>
+                <li>printing workshops</li>
+                <li>publishing houses</li>
+                <li>cultural institutions</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="spacer3"></div>
+
+    <div class="container">
+        <div class="intro-copy">
+            <h3>skills</h3>
+            <p>Both my personal and professional work mainly revolve around print and digital, generating a singular space where to fusion modernity with imagination.</p>
+        </div>
+
+        <div class="row" id="row-1">
+            <div class="col">
+                <div class="img-container right">
+                    <a href=""><img src="./img/vignettes/cv-skill.jpg" alt=""></a>
+                    <h4>Editorial</h4>
+                    <p>Art design, Corporate design, Books and documents layout, Laser, riso and screen printing, Book binding</p>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row" id="row-2">
+            <div class="col"></div>
+            <div class="col">
+                <div class="img-container left">
+                    <img src="./img/vignettes/cv-skill-4.jpg" alt="">
+                    <h4>Webdesign</h4>
+                    <p>Frontend, Assets production, UI design</p>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="row-3">
+            <div class="col">
+                <div class="img-container right">
+                    <img src="./img/vignettes/cv-skill-5.jpg" alt="">
+                    <h4>Adobe suite</h4>
+                    <p>Photoshop, Indesign, Illustrator, After Effects, Fresco</p>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row" id="row-4">
+            <div class="col"></div>
+            <div class="col">
+                <div class="img-container left">
+                    <a href=""><img src="./img/vignettes/cv-skill-3.jpg" alt=""></a>
+                    <h4>Tools</h4>
+                    <p>Sheets of paper and a pen ! But also Figma, Visual Studio Code, Google Workspace, Microsoft Office, AI</p>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="row-5">
+            <div class="col">
+                <div class="img-container right">
+                    <a href=""><img src="./img/vignettes/cv-group-2.jpg" alt=""></a>
+                    <h4 id="h4">Abilities</h4>
+                    <p>Adaptability, Communication, Attention to detail, Initiative, Teamwork, Leadership, Critical thinking, Planning, Problem solving, Networking</p>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row" id="row-6">
+            <div class="col"></div>
+            <div class="col">
+                <div class="img-container left">
+                    <a href=""><img src="./img/vignettes/cv-skill-2.jpg" alt=""></a>
+                    <h4 id="h4">Languages</h4>
+                    <p>Bilingual (C2) in French and English, Novice (A1) in Japanese and German</p>
+                </div>
+            </div>
+        </div>
+   </div>
+
+    <div class="exp-container">
+        <div class="exp-preview">
+            <div class="preview-img"></div>
+        </div>
+    </div>
+    <div class="exp-menu">
+        <div class="exp-head">
+            <h2>Most recent
+                <br><span>experience</span></h2>
+        </div>
+        <div class="exp-item">
+            <div class="exp-info">
+                <p>Guilaine Vertueux</p>
+            </div>
+            <div class="exp-name">
+                <p>Website rebranding, content editing, flyer</p>
+            </div>
+            <div class="exp-date">
+                <p>2024</p>
+            </div>
+        </div>
+        <div class="exp-item">
+            <div class="exp-info">
+                <p>Raúl Illarramendi</p>
+            </div>
+            <div class="exp-name">
+                <p>Artist assistantship and artwork archiving</p>
+            </div>
+            <div class="exp-date">
+                <p>2023</p>
+            </div>
+        </div>
+        <div class="exp-item">
+            <div class="exp-info">
+                <p>Georgia Russell</p>
+            </div>
+            <div class="exp-name">
+                <p>Artist assistantship</p>
+            </div>
+            <div class="exp-date">
+                <p>2023</p>
+            </div>
+        </div>
+        <div class="exp-item">
+            <div class="exp-info">
+                <p>Clément Fourment</p>
+            </div>
+            <div class="exp-name">
+                <p>Artist assistantship</p>
+            </div>
+            <div class="exp-date">
+                <p>2023</p>
+            </div>
+        </div>
+        <div class="exp-item">
+            <div class="exp-info">
+                <p>Blue Sky eLearn</p>
+            </div>
+            <div class="exp-name">
+                <p>PATH site building, documents and assets design</p>
+            </div>
+            <div class="exp-date">
+                <p>2022</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="spacer4"></div> -->
+
+    <div class="notice">
+        <div class="notice-head">
+            <h2><span>Welcoming</span>
+                <br>new trainees ?</h2>
+            <div class="notice-container">
+                <div class="notice-container-1">
+                    <h3>Internship requirements</h3>
+                    <p>One month minimum (Summer 2025). Must include graphic design and/or communication work. Open to in-person and hybrid work, France-based and overseas.</p>
+                </div>
+                <div class="notice-container-2">
+                    <h3>Personal flexibility</h3>
+                    <p>Up to three+ months from June to early Sept. 2025. Strong interest in internships close to Colton and San Francisco, CA (USA), and London (UK) — open to any opportunity worldwide nonetheless.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="marquee">
+        <div class="marquee-inner">
+            <!-- <div class="marquee-part">
+                Looking for an internship (Summer 2025)
+                <div class="arrow">
+                    <span>&#8593;</span>
+                </div>
+            </div>
+            <div class="marquee-part">
+                Looking for an internship (Summer 2025)
+                <div class="arrow">
+                    <span>&#8593;</span>
+                </div>
+            </div>
+            <div class="marquee-part">
+                Looking for an internship (Summer 2025)
+                <div class="arrow">
+                    <span>&#8593;</span>
+                </div>
+            </div>
+            <div class="marquee-part">
+                Looking for an internship (Summer 2025)
+                <div class="arrow">
+                    <span>&#8593;</span>
+                </div>
+            </div>
+            <div class="marquee-part">
+                Looking for an internship (Summer 2025)
+                <div class="arrow">
+                    <span>&#8593;</span>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+<footer>
+    <div class="footer">
+        <ul class="footer-wrapper">
+            <li><a href="index.html" id="link-page-footer">work selection</a></li>
+            <li><a href="mailto:joyftf@outlook.fr">joyftf@outlook.fr</a></li>
+            <li><a href="https://www.instagram.com/shawty.fr/">@shawty.fr</a></li>
+            <li><p>© 2024 Joyce Foo Tam Fong</p></li>
+        </ul>
+    </div>
+</footer>
+
+   <div class="menu-container">
+        <div class="menu-container-1">
+            <div class="menu-container-header">
+                <ul>
+                    <li><span><a href="./index.html#selected-work" data-text="all work">all work</a></span></li>
+                    <li><span><a href="cv.html" data-text="cv">curriculum vitae</a></span></li>
+                </ul>
+            </div>
+            <div class="menu-container-footer">
+                <ul>
+                    <li><span><a href="bhansali.html" data-text="Bhansali">Bhansali</a></span></li>
+                    <li><span><a href="untropdesi.html" data-text="Un trop de si">Un trop de si</a></span></li>
+                    <li><span><a href="sketchandplay.html" data-text="JO:Sketch&Play">JO: Sketch&Play</a></span></li>
+                    <li><span><a href="atelierdeguilaine.html" data-text="L'Atelier de Guilaine">L‘Atelier de Guilaine</a></span></li>
+                    <li><span><a href="clubzinzine.html" data-text="club zinzine">club zinzine</a></span></li>
+                    <li><span><a href="party-goers.html" data-text="party goers">party goers</a></span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-container-2">
+            <div class="menu-container-header">
+                <ul>
+                    <li id="h3">about</li>
+                    <li id="p">Hello there !
+                        <br>I'm Joyce, a 2nd-year graphic design student at ésad Amiens, France, with a few years‘ experience as a freelance creative and digital artist.
+                        <br>Would love to hear from you if you're interested in collaborating (and having the coolest and most efficient intern ever starting June 2025) &#129305;</li>
+                </ul>
+            </div>
+            <div class="menu-container-footer">
+                <ul>
+                    <li><span><a href="mailto:joyftf@outlook.fr">mail</a></span></li>
+                    <li><span><a href="https://www.instagram.com/shawty.fr/">instagram</a></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+ <script>
+        let currentScroll = 0;
+        let isScrollingDown = true;
+        let arrows = document.querySelectorAll(".arrow");
+
+        let tween = gsap.to(".marquee-part", {
+            xPercent: -100,
+            repeat: -1,
+            duration: 5,
+            ease: "linear"
+        })
+        .totalProgress(0.5);
+
+        gsap.set(".marquee-inner", {xPercent: -50});
+
+        window.addEventListener("scroll",function(){
+            if(window.pageYOffset > currentScroll){
+                isScrollingDown = true;
+            } else {
+                isScrollingDown = false;
+            }
+            
+            gsap.to(tween, {
+                timeScale: isScrollingDown ? 1 : -1,
+            });
+
+            arrows.forEach((arrow) => {
+                if(isScrollingDown){
+                    arrow.classList.remove("active");
+                } else {
+                    arrow.classList.add("active");
+                }
+            });
+
+            currentScroll = window.pageYOffset;
+        });
+</script>
+
+ <script>
+        const menu_open = gsap.timeline({
+            paused: true,
+            reversed: true,
+        });
+        menu_open.to(".menu-container", {
+            display:"flex",
+        });
+        menu_open.to("#menuBtnDiv", {
+            duration:0.2,
+            y:50,
+        });
+        menu_open.fromTo("#menuBtnDiv2", {
+            duration: 0.2,
+            y: -110,
+        }, {
+            y: -50,
+        },
+        "-=0.15"
+        );
+        menu_open.from(".menu-container-1", {
+            duration: .5,
+            y: "100%",
+        },
+        "-=0.5"
+        );
+        menu_open.from(".menu-container-1 .menu-container-header li span, .menu-container-1 .menu-container-footer li span", 
+        { stagger: {
+            amount: 0.15,
+            },
+            y: 100,
+            duration: 0.5,
+        },
+        "-=0.1"
+    );
+    menu_open.from(".menu-container-2", {
+        duration: .5,
+        y: "-100%",
+    }, "-=1");
+    menu_open.from(".menu-container-2 .menu-container-footer li span", 
+        { stagger: {
+            amount: 0.15,
+            },
+            y: 100,
+            duration: 0.5,
+        }, "-=0.5");
+    menu_open.from("#h3, #p", 
+        { opacity: 0,
+            duration: 0.5,
+        }, "-=0.5");
+    function menuOpen(){
+            menu_open.reversed()? menu_open.play(): menu_open.reverse();
+        }
+</script>
+
+<script>
+    function lockScroll() {
+        document.body.classList.add('lock-scroll');
+    }
+
+    function unlockScroll() {
+        document.body.classList.remove('lock-scroll');
+    }
+
+    function menuOpen() {
+        menu_open.reversed() ? menu_open.play() : menu_open.reverse();
+        if (menu_open.reversed()) {
+            unlockScroll();
+        } else {
+            lockScroll();
+        }
+    }
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const rows = document.querySelectorAll(".row");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target.querySelector("img");
+                    if (entry.target.querySelector(".left")) {
+                        gsap.to(img, {
+                            clipPath: "polygon(0 0,100% 0, 100% 100%, 0 100%)",
+                        });
+                    } else {
+                        gsap.to(img, {
+                            clipPath: "polygon(0 0,100% 0, 100% 100%, 0 100%)",
+                        });
+                    }
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        rows.forEach(row => observer.observe(row));
+
+        gsap.utils.toArray(".img-container.right img").forEach((img) => {
+            gsap.fromTo(img, {
+                clipPath: "polygon(0 0, 0 0, 0 0, 0 0)",
+            }, {
+                clipPath: "polygon(0 0,100% 0, 100% 100%, 0 100%)",
+                scrollTrigger: {
+                    trigger: img,
+                    start: "top 75%",
+                    end: "bottom 70%",
+                    scrub: true,
+                },
+            });
+        });
+
+        gsap.utils.toArray(".img-container.left img").forEach((img) => {
+            gsap.to(img,{
+                clipPath: "polygon(0 0,100% 0, 100% 100%, 0 100%)",
+                scrollTrigger: {
+                    trigger: img,
+                    start: "top 75%",
+                    end: "bottom 70%",
+                    scrub: true,
+                },
+            });
+        });
+
+        gsap.utils.toArray(".img-container h2").forEach((text) => {
+            gsap.to(text,{
+            opacity: 0,
+            y:20,
+            scrollTrigger: {
+                trigger: text,
+                start: "top 60%",
+                toggleActions: "play none none reverse",
+                },
+            });
+        });
+
+        gsap.utils.toArray(".img-container p").forEach((text) => {
+            gsap.to(text,{
+            opacity: 0,
+            y:20,
+            scrollTrigger: {
+                trigger: text,
+                start: "top 60%",
+                toggleActions: "play none none reverse",
+                },
+            });
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const imageSources = [
+            "./img/vignettes/cv-guilaine.jpg",
+            "./img/vignettes/cv-raul.jpg",
+            "./img/vignettes/cv-georgia.jpg",
+            "./img/vignettes/cv-clement.jpg",
+            "./img/vignettes/cv-bsel.jpg",
+        ];
+
+        const menuItems = document.querySelectorAll(".exp-item");
+
+        menuItems.forEach((item, index) => {
+            const copyElements = item.querySelectorAll(".exp-info, .exp-name, .exp-date");
+
+            copyElements.forEach((div) => {
+                const copy = div.querySelector("p");
+
+                if (copy) {
+                    const duplicateCopy = document.createElement("p");
+                    duplicateCopy.textContent = copy.textContent;
+                    div.appendChild(duplicateCopy);
+                }
+            });
+        });
+
+        const appendImages = (src) => {
+            const preview1 = document.querySelector(".preview-img");
+            const img1 = document.createElement("img");
+
+            img1.src = src;
+            img1.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)";
+
+            preview1.appendChild(img1);
+
+            gsap.to(img1, {
+                clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)",
+                duration: 0.5,
+                ease: "power3.out",
+                onComplete: function() {
+                    removeExtraImages(preview1);
+                },
+            });
+        };
+
+        function removeExtraImages(container) {
+            while (container.children.lenght > 10) {
+                container.removeChild(container.firstChild);
+            }
+        }
+
+        document.querySelectorAll(".exp-item").forEach((item, index) => {
+            item.addEventListener("mouseover", () => {
+                mouseOverAnimation(item);
+                appendImages(imageSources[index]);
+            });
+
+            item.addEventListener("mouseout", () => {
+                mouseOutAnimation(item);
+            });
+        });
+
+        const mouseOverAnimation = (elem) => {
+            gsap.to(elem.querySelectorAll("p:nth-child(1)"), {
+                top: "-110%",
+                duration: 0.3,
+            });
+            gsap.to(elem.querySelectorAll("p:nth-child(2)"), {
+                top: "0%",
+                duration: 0.3,
+            });
+        };
+
+        const mouseOutAnimation = (elem) => {
+            gsap.to(elem.querySelectorAll("p:nth-child(1)"), {
+                top: "0%",
+                duration: 0.3,
+            });
+            gsap.to(elem.querySelectorAll("p:nth-child(2)"), {
+                top: "110%",
+                duration: 0.3,
+            });
+        };
+
+        document.querySelector(".exp-menu").addEventListener("mouseout", function() {
+            gsap.to(".exp-preview-img img", {
+                clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)",
+                duration: 1,
+                ease: "power3.out",
+            });
+        });
+
+        document.addEventListener("mousemove", function(e) {
+            const preview = document.querySelector(".exp-preview");
+
+            gsap.to(preview, {
+                x: e.clientX + 20,
+                y: e.clientY + 210,
+                duration: 0.3,
+                ease: "power3.out",
+            });
+        });
+    });
+</script>
+</body>
+
+</html>
