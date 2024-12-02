@@ -4,8 +4,8 @@ const data = [
         type: 'personal project',
         date: '2022',
         images: [
-            './img/projects/collection.jpg',
-            './img/projects/collection2.jpg',
+            './img/projects/collection/collection.jpg',
+            './img/projects/collection/collection2.jpg',
         ],
         content: '. editorial. photo',
         field: 'editorial',
@@ -53,7 +53,7 @@ const data = [
         date: '2024',
         images: [
             './img/vignettes/yo-mama-riso.jpg',
-            './img/projects/yo-mama-star.png',
+            './img/projects/yo-mama-2024/yo-mama-star.png',
         ],
         content: '. animation. print',
         field: 'other',
