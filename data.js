@@ -7,9 +7,9 @@ const data = [
             './img/projects/coffret-bhansali-2024/expo-coffret-3.jpg',
             './img/projects/coffret-bhansali-2024/expo-posters.jpg',
         ],
-        content: '. editorial. photo',
+        content: '. editorial',
         field: 'editorial',
-        link: 'luisirophilie.html'
+        link: 'bhansali.html'
     },
     {
         title: 'Luisirophilie',

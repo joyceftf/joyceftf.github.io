@@ -233,6 +233,9 @@ ul{
     header .logo a{
         font-size: clamp(1.1rem, 3vw, 1.5rem);
     }
+    .menu-container-1, .menu-container-2{
+        height: 100vh;
+    }
     .menu-container-1 .menu-container-header {
         padding-top: 6vh;
     }
