@@ -60,7 +60,7 @@ header .menu-items .internship{
     padding: 0 3.5rem;
     font-size: clamp(1rem, -1.75rem + 7.3333vw, 1rem);
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
    .internship{
        display: none;
    } 
@@ -95,7 +95,7 @@ header .menu-items .internship{
     position: relative;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     header .logo{
         margin-left: 2rem;
     }
@@ -228,7 +228,7 @@ ul{
     color: var(--dark-color);
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     header .logo a{
         font-size: clamp(1.1rem, 3vw, 1.5rem);
@@ -500,7 +500,7 @@ ul{
     font-style: italic;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .about{
         padding-top: 9rem;
     }
@@ -558,7 +558,7 @@ ul{
 .col{
     height: 100%;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .row{
         gap: none;
     }
@@ -597,7 +597,7 @@ ul{
     -webkit-backdrop-filter: blur(6px); 
     backdrop-filter: blur(6px);
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .img-container{
         width: 60%;
         -webkit-backdrop-filter: blur(8px); 
@@ -786,7 +786,7 @@ ul{
     text-align: center;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .exp-head{
         padding: 3.5rem 0;
     }
@@ -908,7 +908,7 @@ ul{
     width: 50%;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .notice{
         overflow: hidden;
     }
@@ -1167,7 +1167,7 @@ a.view_link {
     font-weight: lighter;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .footer-wrapper{
         display: flex;
         flex-direction: column;
@@ -1222,7 +1222,7 @@ a.view_link {
 }
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .map{
         display: none;
     }
@@ -1240,7 +1240,7 @@ a.view_link {
     margin: 0 0 10vh 0;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .sections{
         width: 100%;
         left: 0;
@@ -1328,7 +1328,7 @@ a.view_link {
     text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .copy h1{
         font-size: clamp(2rem, 6vw, 3.5rem);
     }
@@ -1406,7 +1406,7 @@ a.view_link {
     transition: all 0.5s ease-in-out 1s;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .copy-display{
         height: 50vh;
     }
@@ -1449,7 +1449,7 @@ a.view_link {
     overflow: hidden;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .copy-gallery, .copy-gallery-2{
         display: flex;
         flex-direction: column;
