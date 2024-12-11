@@ -1443,6 +1443,12 @@ a.view_link {
     }
     #btn-more{
         padding: .5rem 7.5rem;
+        margin: 2rem 0 0 0;
+    }
+    #btn-more:hover{
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto 0 auto;
     }
 }
 
