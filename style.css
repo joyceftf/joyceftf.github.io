@@ -329,9 +329,10 @@ ul{
 @media(max-width:768px) {
     .marquee{
         font-size: clamp(1.1rem, 3vw, 1.5rem);
+        font-weight: normal;
     }
     .nav .prev{
-        top: 33rem;
+        top: 34rem;
         right: 4rem;
     }
     .nav .next{
@@ -522,6 +523,7 @@ ul{
         text-align: justify;
         hyphens: auto;
         text-transform: none;
+        font-weight: normal;
     }
     .about-hero h3{
         font-size: clamp(1rem, 2.5vw, 1.2rem);
@@ -614,6 +616,7 @@ ul{
         font-size: clamp(1.2rem, -1.75rem + 7.3333vw, 1.5rem);
         text-align: justify;
         hyphens: auto;
+        font-weight: normal;
     }
 }
 .img-container.left{
@@ -647,9 +650,10 @@ ul{
     .img-container p{
         text-align: justify;
         hyphens: auto;
-        font-size: clamp(.9rem, -1.75rem + 7.3333vw, 1.2rem);
+        font-size: clamp(1rem, -1.75rem + 7.3333vw, 1.2rem);
         line-height: 1;
         text-transform: none;
+        font-weight: normal;
     }
     #row-1{
         width: 110%;
@@ -923,6 +927,8 @@ ul{
     }
     .notice-container p{
         font-size: clamp(1.2rem, -1.75rem + 7.3333vw, 1.5rem);
+        text-align: justify;
+        hyphens: auto;
     }
     .notice-container{
         flex-direction: column;
@@ -1091,7 +1097,7 @@ a.view_link {
         padding-bottom: 5vh;
     }
     .projects .view_wrapper{
-        margin-top: 5vh;
+        margin-top: 2.5vh;
         overflow:scroll;
     }
     .projects .view_item{
