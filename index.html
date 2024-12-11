@@ -145,7 +145,7 @@
         </div>
 
         <div class="item-counter">
-            <p><span id="current-item">1</span> &mdash; <span id="total-items">8</span></p>
+            <p><span id="current-item">1</span> &mdash; <span id="total-items">7</span></p>
         </div>
     </div>
 
@@ -286,7 +286,7 @@
                 <ul>
                     <li id="h3">about</li>
                     <li id="p">Hello there !
-                        <br>I'm Joyce, a 2nd-year graphic design student at ésad Amiens, France, with a few years‘ experience as a freelance creative and digital artist.
+                        <br>I'm Joyce, a second-year graphic design student at ésad Amiens, in France, with a few years‘ experience as a freelance creative and digital artist.
                         <br>Would love to hear from you if you're interested in collaborating (and having the coolest and most efficient intern ever starting June 2025) &#129305;</li>
                 </ul>
             </div>
@@ -509,7 +509,7 @@
             duration: 0.2,
             y: -110,
         }, {
-            y: -50,
+            y: window.innerWidth <= 768 ? -30 : -50,
         },
         "-=0.15"
         );
@@ -542,8 +542,8 @@
     menu_open.from("#h3, #p", 
         { opacity: 0,
             duration: 0.5,
-        }, "-=0.5");
-    </script>
+        }, "-=0.5");     
+</script>
 
 <script>
     function lockScroll() {
