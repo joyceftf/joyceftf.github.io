@@ -1,5 +1,17 @@
 const data = [
     {
+        title: 'Bhansali',
+        type: 'personal project',
+        date: '2024',
+        images: [
+            './img/projects/coffret-bhansali-2024/expo-coffret-3.jpg',
+            './img/projects/coffret-bhansali-2024/expo-posters.jpg',
+        ],
+        content: '. editorial. photo',
+        field: 'editorial',
+        link: 'luisirophilie.html'
+    },
+    {
         title: 'Luisirophilie',
         type: 'personal project',
         date: '2022',

@@ -451,7 +451,7 @@ ul{
 .about-hero h2{
     font-weight: 400;
     font-size: clamp(1.5rem, 3vw, 2rem);
-    color: var(--dark-color);
+    color: black;
     margin-right: 30rem;
 }
 .about-hero:hover h2{
@@ -656,24 +656,36 @@ ul{
         font-weight: normal;
     }
     #row-1{
-        width: 110%;
+        width: 120%;
+        margin-right: 0;
+        padding-right: 2rem;
     }
     #row-2{
         width: 110%;
+        margin-left: 0;
+        padding-left: 2rem;
     }
     #row-3{
-        width: 100%;
+        width: 120%;
+        margin-right: 0;
+        padding-right: 2rem;
     }
     #row-4{
         width: 110%;
+        margin-left: 0;
+        padding-left: 2rem;
     }
     #row-5{
-        width: 90%;
+        width: 125%;
+        margin-right: 0;
+        padding-right: 2rem;
+        margin-left: 0;
         padding-left: 0;
-        margin-left: 15%;
     }
     #row-6{
-        width: 85%;
+        width: 95%;
+        margin-left: 0;
+        padding-left: 2rem;
     }
     .img-container h4{
         margin-top: .6rem;
