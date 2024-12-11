@@ -1316,8 +1316,10 @@ a.view_link {
 .copy p{
     color: var(--light-color);
     opacity: 0.9;
-    line-height: 1.5;
+    line-height: 1.3;
     text-align: justify;
+    text-transform: none;
+    hyphens: auto;
     text-align-last: left;
 }
 .copy:hover{
@@ -1356,6 +1358,9 @@ a.view_link {
     .copy h2{
         font-size: clamp(1.5rem, 5vw, 2.5rem);
         font-weight: 400;
+    }
+    .copy li{
+        font-weight: normal;
     }
     .copy .tags-wrapper{
         margin-top: .3rem;
@@ -1429,14 +1434,15 @@ a.view_link {
 
 @media screen and (max-width: 768px) {
     .copy-display{
-        height: 50vh;
+        height: 40vh;
     }
     .copy-gallery, .copy-gallery-2{
         display: flex;
         flex-direction: column;
+        height: 500vh;
     }
     #btn-more{
-        padding: .5rem 11rem;
+        padding: .5rem 7.5rem;
     }
 }
 
@@ -1471,11 +1477,6 @@ a.view_link {
 }
 
 @media screen and (max-width: 768px) {
-    .copy-gallery, .copy-gallery-2{
-        display: flex;
-        flex-direction: column;
-        height: 500vh;
-    }
     .modal-content {
         width: 100%;
     }
