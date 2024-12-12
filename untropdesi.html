@@ -90,7 +90,12 @@
                 </div>
                 <div class="copy grid-gallery">
                     <div class="copy-gallery">
-                        <div class="visual">
+                        <div class="visual" id="twovisuals">
+                            <div class="modal" id="modal">
+                                <div class="modal-content" id="modal-img"></div>
+                            </div>
+                        </div>
+                        <div class="visual" id="twovisuals">
                             <div class="modal" id="modal">
                                 <div class="modal-content" id="modal-img"></div>
                             </div>
@@ -101,6 +106,16 @@
                             </div>
                         </div>
                         <div class="visual">
+                            <div class="modal" id="modal">
+                                <div class="modal-content" id="modal-img"></div>
+                            </div>
+                        </div>
+                        <div class="visual" id="twovisuals">
+                            <div class="modal" id="modal">
+                                <div class="modal-content" id="modal-img"></div>
+                            </div>
+                        </div>
+                        <div class="visual" id="twovisuals">
                             <div class="modal" id="modal">
                                 <div class="modal-content" id="modal-img"></div>
                             </div>
@@ -116,6 +131,21 @@
                     
                     <div class="copy-gallery-2">
                         <span class="more">
+                            <div class="visual" id="twovisuals">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
+                            <div class="visual" id="twovisuals">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
+                            <div class="visual">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
                             <div class="visual">
                                 <div class="modal" id="modal">
                                     <div class="modal-content" id="modal-img"></div>
@@ -492,20 +522,23 @@
 
 <style>
 .copy-gallery{
-    min-height: 400vh;
+    height: 500vh;
 }
 .copy-gallery-2{
-    min-height: 300vh;
+    height: 300vh;
 }
 .more{
-    height: 300vh;
+    height: 500vh;
 }
 @media (max-width: 768px) {
     .copy-gallery{
-        height: 100vh;
+        height: 400vh;
+    }
+    .copy-gallery #twovisuals{
+        height: 600vh;
     }
     .copy-gallery-2{
-        height: 100vh;
+        height: 200vh;
     }
     .more{
         height: 300vh;
@@ -516,12 +549,19 @@
     document.addEventListener("DOMContentLoaded", () => {
         const galleryItems = document.querySelectorAll(".visual");
         const images = [
+            './img/projects/un-trop-de-si-2024/untropdesi-book-open-3.jpg',
+            './img/projects/un-trop-de-si-2024/untropdesi-book.jpg',
+            './img/projects/un-trop-de-si-2024/untropdesi-book-2.jpg',
+            './img/projects/un-trop-de-si-2024/untropdesi-book-8.jpg',
+            './img/projects/un-trop-de-si-2024/untropdesi-book-open-2.jpg',
+            './img/projects/un-trop-de-si-2024/untropdesi-book-3.jpg',
+            './img/projects/un-trop-de-si-2024/untropdesi-book-4.jpg',
+            './img/projects/un-trop-de-si-2024/untropdesi-book-6.jpg',
+
+
+            './img/projects/un-trop-de-si-2024/untropdesi-book-5.jpg',
+            './img/projects/un-trop-de-si-2024/untropdesi-book-7.jpg',
             './img/projects/un-trop-de-si-2024/untropdesi-book-open.jpg',
-            './img/collection2.jpg',
-            './img/frat7yl.jpeg',
-            './img/nap-zine.jpg',
-            './img/collection2.jpg',
-            './img/frat7yl.jpeg',
         ];
         
         galleryItems.forEach((item, index) => {

@@ -228,12 +228,12 @@ const data = [
         link: 'prints.html'
     },
     {
-        title: 'stickers',
-        type: 'personal project',
+        title: 'BDE 2024',
+        type: 'commissioned',
         date: '2024',
         images: [
-            './img/vignettes/stickers.jpg',
-            './img/vignettes/stickers-2.jpg',
+            './img/vignettes/colliers.jpg',
+            './img/vignettes/bde-tape.jpg',
         ],
         content: '. merch. illustration',
         field: 'other',
