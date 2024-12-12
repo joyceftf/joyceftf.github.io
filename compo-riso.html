@@ -65,11 +65,11 @@
                         <li><h3 class="tag">Editorial</h3></li>
                         <li><h3 class="tag">Prints</h3></li>
                     </ul>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, maiores earum hic pariatur voluptatibus ipsa consequuntur nobis porro saepe minus commodi necessitatibus quod sapiente sunt voluptatem. Doloremque quidem et dignissimos?</p>
-                    <br>
                     <div class="copy-display">
                         <div class="visual display"></div>
-                    </div>                    
+                    </div>
+                    <br>
+                    <p>This riso-printed project started from the study of (text) by (author) and came to light following these few sentences : « quote ».</p>                   
                 </div>
             </div>
             <div class="section-2 sec" id="section-2">
@@ -110,12 +110,12 @@
                                 <div class="modal-content" id="modal-img"></div>
                             </div>
                         </div>
-                        <div class="visual">
+                        <div class="visual" id="twovisuals">
                             <div class="modal" id="modal">
                                 <div class="modal-content" id="modal-img"></div>
                             </div>
                         </div>
-                        <div class="visual">
+                        <div class="visual" id="twovisuals">
                             <div class="modal" id="modal">
                                 <div class="modal-content" id="modal-img"></div>
                             </div>
@@ -143,8 +143,7 @@
                     <br>
                     <h4>Assets</h4>
                     <br>
-                    <p>Lettering by Joyce Foo Tam Fong
-                    </p>
+                    <p>Lettering : Joyce Foo Tam Fong</p>
                 </div>
             </div>
             <a href="./index.html#selected-work" class="page-footer">GO BACK TO PROJECTS</a>
@@ -443,12 +442,15 @@
 
 <style>
 .copy-gallery{
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     height: 600vh;
 }
 @media (max-width: 768px) {
     .copy-gallery{
-        height: 450vh;
+        height: 400vh;
+    }
+    #twovisuals{
+        height: 800vh
     }
 }
 </style>
