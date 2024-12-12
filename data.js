@@ -16,8 +16,8 @@ const data = [
         type: 'personal project',
         date: '2022',
         images: [
-            './img/projects/collection/collection.jpg',
-            './img/projects/collection/collection2.jpg',
+            './img/projects/collection/luisirophile-book-2.jpg',
+            './img/projects/collection/luisirophile-doc.jpg',
         ],
         content: '. editorial. photo',
         field: 'editorial',
