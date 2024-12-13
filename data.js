@@ -5,7 +5,7 @@ const data = [
         date: '2024',
         images: [
             './img/projects/coffret-bhansali-2024/expo-coffret-3.jpg',
-            './img/projects/coffret-bhansali-2024/expo-posters.jpg',
+            './img/vignettes/devdas-ramleela-books.jpg',
         ],
         content: '. editorial',
         field: 'editorial',
