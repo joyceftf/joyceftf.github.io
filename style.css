@@ -237,7 +237,7 @@ ul{
         height: 100vh;
     }
     .menu-container-1 .menu-container-header {
-        padding-top: 6vh;
+        padding-top: 2vh;
     }
     .menu-container-1 .menu-container-header li,
     .menu-container-1 .menu-container-footer li,
@@ -259,6 +259,10 @@ ul{
     .menu-container-1 .menu-container-header li, 
     .menu-container-2 .menu-container-footer li{
         font-size: clamp(1.2rem, -1.75rem + 7.3333vw, 1.5rem);
+    }
+    .menu-container-1 .menu-container-footer,
+    .menu-container-2 .menu-container-footer{
+        padding-bottom: 2vh;
     }
     
 }
