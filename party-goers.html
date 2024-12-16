@@ -131,6 +131,11 @@
                                     <div class="modal-content" id="modal-img"></div>
                                 </div>
                             </div>
+                            <div class="visual">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
                             <div class="visual" id="twovisuals">
                                 <div class="modal" id="modal">
                                     <div class="modal-content" id="modal-img"></div>
@@ -507,9 +512,9 @@
 .copy-gallery{
     height: 700vh;
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .copy-gallery{
-        height: 400vh;
+        height: 350vh;
     }
 }
 </style>
@@ -517,11 +522,12 @@
     document.addEventListener("DOMContentLoaded", () => {
         const galleryItems = document.querySelectorAll(".visual");
         const images = [
-            './img/projects/party-goers/party-goers.jpg',
+            './img/projects/party-goers/party-goers.gif',
             './img/projects/party-goers/party-goers-both.jpg',
             './img/projects/party-goers/party-goers-riso.jpg',
             './img/projects/party-goers/party-goers-5.jpg',
             './img/projects/party-goers/party-goers-both-5.jpg',
+            './img/projects/party-goers/party-goers.jpg',
             './img/projects/party-goers/party-goers-both-2.jpg',
             './img/projects/party-goers/party-goers-2.jpg',
             './img/projects/party-goers/party-goers-both-7.jpg',

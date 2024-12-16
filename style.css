@@ -60,7 +60,7 @@ header .menu-items .internship{
     padding: 0 3.5rem;
     font-size: clamp(1rem, -1.75rem + 7.3333vw, 1rem);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
    .internship{
        display: none;
    } 
@@ -95,7 +95,7 @@ header .menu-items .internship{
     position: relative;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     header .logo{
         margin-left: 2rem;
     }
@@ -228,7 +228,7 @@ ul{
     color: var(--dark-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
 
     header .logo a{
         font-size: clamp(1.1rem, 3vw, 1.5rem);
@@ -252,6 +252,7 @@ ul{
         font-weight: 300;
     }
     .menu-container-1 .menu-container-header li, 
+    .menu-container-1 .menu-container-footer li, 
     .menu-container-2 .menu-container-footer li {
         font-weight: bold;
     }
@@ -329,17 +330,17 @@ ul{
     right:4rem;
     transform: scale(2) rotate(180deg);
 }
-@media(max-width:768px) {
+@media(max-width:480px) {
     .marquee{
         font-size: clamp(1.1rem, 3vw, 1.5rem);
         font-weight: normal;
     }
     .nav .prev{
-        top: 35rem;
+        top: 34rem;
         right: 4rem;
     }
     .nav .next{
-        bottom: 14rem;
+        bottom: 15rem;
         right: 4rem;
     }
 }
@@ -425,7 +426,7 @@ ul{
     display: flex;
 }
 
-@media(max-width:768px) {
+@media(max-width:480px) {
     .card-slider .item a.title{
         font-size: clamp(2rem, 9vw, 3.5rem);
     }
@@ -504,7 +505,7 @@ ul{
     font-style: italic;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .about{
         padding-top: 9rem;
     }
@@ -563,7 +564,7 @@ ul{
 .col{
     height: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .row{
         gap: none;
     }
@@ -602,7 +603,7 @@ ul{
     -webkit-backdrop-filter: blur(6px); 
     backdrop-filter: blur(6px);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .img-container{
         width: 60%;
         -webkit-backdrop-filter: blur(8px); 
@@ -649,7 +650,7 @@ ul{
     opacity: 0.9;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .img-container p{
         text-align: justify;
         hyphens: auto;
@@ -805,7 +806,7 @@ ul{
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .exp-head{
         padding: 3.5rem 0;
     }
@@ -927,7 +928,7 @@ ul{
     width: 50%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .notice{
         overflow: hidden;
     }
@@ -1083,7 +1084,7 @@ a.view_link {
     white-space: nowrap;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .nav-projects{
         margin-top: 0;
         padding-top: 0;
@@ -1188,7 +1189,7 @@ a.view_link {
     font-weight: lighter;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .footer-wrapper{
         display: flex;
         flex-direction: column;
@@ -1243,7 +1244,7 @@ a.view_link {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .map{
         display: none;
     }
@@ -1261,7 +1262,7 @@ a.view_link {
     margin: 0 0 10vh 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .sections{
         width: 100%;
         left: 0;
@@ -1351,7 +1352,7 @@ a.view_link {
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .copy h1{
         font-size: clamp(2rem, 6vw, 3.5rem);
     }
@@ -1432,7 +1433,7 @@ a.view_link {
     transition: all 0.5s ease-in-out 1s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .copy-display{
         height: 40vh;
     }
@@ -1477,7 +1478,7 @@ a.view_link {
     overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .modal-content {
         width: 100%;
     }
