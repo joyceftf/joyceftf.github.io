@@ -292,6 +292,7 @@
                     <h4>Assets</h4>
                     <br>
                     <p>Despair Display : Misha Ivanov, Hinglish : Shirin Johari</p>
+                    <br>
                     <p>Movie stills : Eros Now, Bhansali Productions</p>
                     <p>Illustrations : Joyce Foo Tam Fong</p>
                 </div>
@@ -345,14 +346,7 @@
 
 
 
-<style>
-
-</style>
-
-
-
-
- <script>
+<script>
         let currentScroll = 0;
         let isScrollingDown = true;
         let arrows = document.querySelectorAll(".arrow");
@@ -649,14 +643,13 @@
 }
 @media (max-width: 768px) {
     .copy-gallery{
-        height: 400vh;
-        display: grid;
+        height: 650vh;
     }
     .copy-gallery-2{
-        height: 490vh;
+        height: 800vh;
     }
     .more{
-    height: 550vh;
+    height: 900vh;
     }
 }
 </style>
@@ -722,11 +715,17 @@
                 copyGallery.forEach(item => item.style.display = "none");
                 more.forEach(item => item.style.display = "none");
                 btnMore.textContent = "Load more";
+                btnMore.style.padding = ".5rem 7rem";
+                btnMore.style.color = "var(--light-color)";
+                btnMore.style.borderColor = "var(--light-color)";
             } else {
                 copyGallery.forEach(item => item.style.display = "block");
                 more.forEach(item => item.style.display = "grid");
                 visuals.forEach(visual => visual.style.display = "block");
                 btnMore.textContent = "Show less";
+                btnMore.style.padding = ".5rem .5rem";
+                btnMore.style.color = "var(--strong-accent-color)";
+                btnMore.style.borderColor = "var(--strong-accent-color)";
             }
             isExpanded = !isExpanded;
         });

@@ -1420,7 +1420,7 @@ a.view_link {
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
-    border: solid 2px var(--dark-color);
+    border: solid 2px var(--light-color);
     padding: .5rem 28rem;
     display: block;
     text-align: center;
@@ -1436,14 +1436,9 @@ a.view_link {
     .copy-display{
         height: 40vh;
     }
-    .copy-gallery, .copy-gallery-2{
-        display: flex;
-        flex-direction: column;
-        height: 500vh;
-    }
     #btn-more{
-        padding: .5rem 7.5rem;
-        margin: 2rem 0 0 0;
+        padding: .5rem 4rem;
+        margin: 2rem auto 0 auto;
     }
     #btn-more:hover{
         justify-content: center;
