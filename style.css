@@ -262,7 +262,7 @@ ul{
     }
     .menu-container-1 .menu-container-footer,
     .menu-container-2 .menu-container-footer{
-        margin-bottom: 4vh;
+        margin-bottom: 6vh;
     }
     
 }
@@ -1368,7 +1368,8 @@ a.view_link {
         font-weight: normal;
     }
     .copy .tags-wrapper{
-        margin-top: .3rem;
+        margin-top: .5rem;
+        flex-wrap: wrap;
     }
 }
 
