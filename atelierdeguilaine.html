@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
     <script src="/minified/ScrollToPlugin.min.js"></script>
-    <title>Joyce Foo Tam Fong — Page</title>
+    <title>Joyce Foo Tam Fong — L‘Atelier de Guilaine</title>
 </head>
 
 <body>
@@ -40,34 +40,29 @@
     <div class="page-container">
         <div class="map">
             <div class="s-1 active">
-                <a href="/.html#section-1"><p>intro</p></a>
+                <a href="/atelierdeguilaine.html#section-1"><p>intro</p></a>
             </div>
             <div class="s-2">
-                <a href="/.html#section-2"><p>approach</p></a>
+                <a href="/atelierdeguilaine.html#section-2"><p>approach</p></a>
             </div>
             <div class="s-3">
-                <a href="/.html#section-3"><p>work</p></a>
+                <a href="/atelierdeguilaine.html#section-3"><p>work</p></a>
             </div>
             <div class="s-4">
-                <a href="/.html#section-4"><p>credits</p></a>
+                <a href="/atelierdeguilaine.html#section-4"><p>credits</p></a>
             </div>
         </div>
 
         <div class="sections">
             <div class="section-1 sec" id="section-1">
                 <div class="section-header active">
-                    <p>Titre</p>
+                    <p>L‘Atelier de Guilaine</p>
                     <p>introduction</p>
                 </div>
                 <div class="copy">
-                    <h2>Titre</h2>
+                    <h2>L‘Atelier de Guilaine</h2>
                     <ul class="tags-wrapper">
-                        <li><h3 class="tag">Art direction</h3></li>
-                        <li><h3 class="tag">Editorial</h3></li>
-                        <li><h3 class="tag">Photography</h3></li>
-                        <li><h3 class="tag">Prints</h3></li>
-                        <li><h3 class="tag">Frontend</h3></li>
-                        <li><h3 class="tag">Signage</h3></li>
+                        <li><h3 class="tag">Art direction</h3></li><li><h3 class="tag">Frontend</h3></li>
                     </ul>
                     <div class="copy-display">
                         <div class="visual display"></div>
@@ -78,7 +73,7 @@
             </div>
             <div class="section-2 sec" id="section-2">
                 <div class="section-header">
-                    <p>Titre</p>
+                    <p>L‘Atelier de Guilaine</p>
                     <p>approach</p>
                 </div>
                 <div class="copy">
@@ -89,7 +84,7 @@
             </div>
             <div class="section-3 sec" id="section-3">
                 <div class="section-header">
-                    <p>Titre</p>
+                    <p>L‘Atelier de Guilaine</p>
                     <p>work</p>
                 </div>
                 <div class="copy grid-gallery">
@@ -114,29 +109,18 @@
                                 <div class="modal-content" id="modal-img"></div>
                             </div>
                         </div>
+                        <div class="visual">
+                            <div class="modal" id="modal">
+                                <div class="modal-content" id="modal-img"></div>
+                            </div>
+                        </div>
+                        <div class="visual">
+                            <div class="modal" id="modal">
+                                <div class="modal-content" id="modal-img"></div>
+                            </div>
+                        </div>
                     </div>
-                    
-                        <button onclick="myFunction()" id="btn-more">Load more</button>
-                    
-                    <div class="copy-gallery-2">
-                        <span class="more">
-                            <div class="visual">
-                                <div class="modal" id="modal">
-                                    <div class="modal-content" id="modal-img"></div>
-                                </div>
-                            </div>
-                            <div class="visual">
-                                <div class="modal" id="modal">
-                                    <div class="modal-content" id="modal-img"></div>
-                                </div>
-                            </div>
-                            <div class="visual">
-                                <div class="modal" id="modal">
-                                    <div class="modal-content" id="modal-img"></div>
-                                </div>
-                            </div>
-                        </span>
-                    </div>
+                    <button><a href="https://www.atelier-de-guilaine.eu">Discover the website</a></button>
                 </div>
                 <div id="modal" class="modal">
                     <div id="modal-content" class="modal-content"></div>
@@ -144,7 +128,7 @@
             </div>
             <div class="section-4 sec" id="section-4">
                 <div class="section-header">
-                    <p>Titre</p>
+                    <p>L‘Atelier de Guilaine</p>
                     <p>credits</p>
                 </div>
                 <div class="copy">
@@ -179,7 +163,7 @@
                     <li><span><a href="bhansali.html" data-text="Bhansali">Bhansali</a></span></li>
                     <li><span><a href="untropdesi.html" data-text="Un trop de si">Un trop de si</a></span></li>
                     <li><span><a href="sketchandplay.html" data-text="JO:Sketch&Play">JO: Sketch&Play</a></span></li>
-                    <li><span><a href="atelierdeguilaine.html" data-text="L'Atelier de Guilaine">L‘Atelier de Guilaine</a></span></li>
+                    <!-- <li><span><a href="atelierdeguilaine.html" data-text="L'Atelier de Guilaine">L‘Atelier de Guilaine</a></span></li> -->
                     <li><span><a href="clubzinzine.html" data-text="club zinzine">Club Zinzine</a></span></li>
                     <li><span><a href="party-goers.html" data-text="party goers">Party Goers</a></span></li>
                 </ul>
@@ -496,37 +480,53 @@
 
 <style>
 .copy-gallery{
-    height: 900vh;
+    height: 500vh;
 }
-.copy-gallery-2{
-    height: 1410vh;
+button{
+    background-color: transparent;
+    color: var(--light-color);
+    font-size: .9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border: solid 2px var(--mid-color);
+    padding: .5rem 24rem;
+    margin: 2rem auto 0 auto;
+    display: block;
+    text-align: center;
 }
-.more{
-    height: 1600vh;
+button:hover{
+    background-color: var(--mid-color);
+    border: solid 2px var(--strong-accent-color);
+    color: var(--strong-accent-color);
+    transition: all .3s ease;
+    padding: .5rem .5rem;
+}
+button a{
+    text-decoration: none;
+    color: inherit;
 }
 @media (max-width: 768px) {
     .copy-gallery{
-        height: 400vh;
-        display: grid;
+        height: 320vh;
     }
-    .copy-gallery-2{
-        height: 490vh;
-    }
-    .more{
-    height: 550vh;
+    button{
+        padding: .5rem 7rem;
     }
 }
 </style>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
         const galleryItems = document.querySelectorAll(".visual");
-        const images = [
-            './img/nap-zine.jpg',
-            './img/collection2.jpg',
-            './img/frat7yl.jpeg',
-            './img/nap-zine.jpg',
-            './img/collection2.jpg',
-            './img/frat7yl.jpeg',
+        const images = [  
+            './img/projects/atelier-de-guilaine-2024/guilaine-phone.jpg',
+
+            './img/projects/atelier-de-guilaine-2024/guilaine-planche-3.jpg',
+            './img/projects/atelier-de-guilaine-2024/guilaine-phone-3.jpg',
+            './img/projects/atelier-de-guilaine-2024/guilaine-accueil.gif',
+            './img/projects/atelier-de-guilaine-2024/guilaine-planche.jpg',
+            './img/projects/atelier-de-guilaine-2024/guilaine-planche-2.jpg',
+            './img/projects/atelier-de-guilaine-2024/guilaine-mcbook.jpg',
         ];
         
         galleryItems.forEach((item, index) => {
@@ -557,6 +557,15 @@
                 btnMore.textContent = "Show less";
             }
             isExpanded = !isExpanded;
+        });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const buttonLink = document.querySelector("button a");
+        buttonLink.addEventListener("click", (event) => {
+            event.preventDefault();
+            window.open(buttonLink.href, '_blank');
         });
     });
 </script>

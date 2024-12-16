@@ -144,16 +144,16 @@ const data = [
     //     link: 'lasieste.html'
     // },
     {
-        title: 'Compo riso',
+        title: 'Prose and Poetry',
         type: 'personal project',
         date: '2023',
         images: [
-            './img/projects/riso/compo-riso-11.jpg',
+            './img/projects/proseandpoetry-2023/compo-riso-11.jpg',
             './img/vignettes/riso.jpg',
         ],
         content: '. editorial',
         field: 'editorial',
-        link: 'compo-riso.html'
+        link: 'proseandpoetry.html'
     },
     {
         title: 'Club Zinzin.e',
@@ -167,18 +167,18 @@ const data = [
         field: 'editorial',
         link: 'clubzinzine.html'
     },
-    // {
-    //     title: 'L‘Atelier de Guilaine',
-    //     type: 'commissioned',
-    //     date: '2024',
-    //     images: [
-    //         './img/vignettes/guilaine-vertueux.jpg',
-    //         './img/vignettes/guilaine-vertueux.jpg',
-    //     ],
-    //     content: '. frontend. print',
-    //     field: 'front',
-    //     link: 'latelierdeguilaine.html'
-    // },
+    {
+        title: 'L‘Atelier de Guilaine',
+        type: 'commissioned',
+        date: '2024',
+        images: [
+            './img/vignettes/guilaine-phone-2.jpg',
+            './img/vignettes/atelier-de-guilaine.jpg',
+        ],
+        content: '. frontend. print',
+        field: 'front',
+        link: 'atelierdeguilaine.html'
+    },
     // {
     //     title: 'Nel Vespero Migrar',
     //     type: 'commissioned',
