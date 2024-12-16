@@ -65,7 +65,8 @@
                         <li><h3 class="tag">Art direction</h3></li>
                         <li><h3 class="tag">Editorial</h3></li>
                     </ul>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, maiores earum hic pariatur voluptatibus ipsa consequuntur nobis porro saepe minus commodi necessitatibus quod sapiente sunt voluptatem. Doloremque quidem et dignissimos?</p>
+                    <p><u>Un trop de Si</u> is a 234-page original story by author Lysn, about 20-year-old Soa and the day where she chose to stray from her everyday routine to help out a stranger.
+                    <br>The current book cover and the actual storyline sparked inspiration to reenact the introduction of the novel through illustrations and quotes from the story, slipping easter eggs all along for a more lively and exclusive experience of this written adventure.</p>
                     <br>
                     <div class="copy-display">
                         <div class="visual display"></div>
@@ -78,9 +79,10 @@
                     <p>approach</p>
                 </div>
                 <div class="copy">
-                    <h4>Catching phrase</h4>
+                    <h4>Banger Boba Tea</h4>
                     <br>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, maiores earum hic pariatur voluptatibus ipsa consequuntur nobis porro saepe minus commodi necessitatibus quod sapiente sunt voluptatem. Doloremque quidem et dignissimos?</p>
+                    <p>This take on <u>Un trop de Si</u> is a personal interpretation of the characters and diverse elements described throughout from Lysn‘s eyes and distinctive likings : cute chubby designs, a splash of vivid color accents among a nude palette and more muted browns, modern and stylish fashion cues, a map of the subway as the summary and last, but not least, a nod to the fictional boba tea shop where to get a delight or two, alone or with friends.
+                    <br>The bookmarks turned fidelity cards are not only complementary to the fictional branding of BBT, they also serve as little roadmaps to keep tabs with the reader‘s reading pace and understanding of the story that features a certain amount of small and big plot twists.</p>
                 </div>
             </div>
             <div class="section-3 sec" id="section-3">
@@ -96,6 +98,11 @@
                             </div>
                         </div>
                         <div class="visual" id="twovisuals">
+                            <div class="modal" id="modal">
+                                <div class="modal-content" id="modal-img"></div>
+                            </div>
+                        </div>
+                        <div class="visual">
                             <div class="modal" id="modal">
                                 <div class="modal-content" id="modal-img"></div>
                             </div>
@@ -131,6 +138,11 @@
                     
                     <div class="copy-gallery-2">
                         <span class="more">
+                            <div class="visual">
+                                <div class="modal" id="modal">
+                                    <div class="modal-content" id="modal-img"></div>
+                                </div>
+                            </div>
                             <div class="visual" id="twovisuals">
                                 <div class="modal" id="modal">
                                     <div class="modal-content" id="modal-img"></div>
@@ -180,8 +192,14 @@
                     <br>
                     <h4>Assets</h4>
                     <br>
+                    <p>Book : Lysn, <u>Un Trop De Si</u> (2021)</p>
+                    <br>
+                    <p>Aozora Mincho Black (credits to the designer), Kirang Haerang : Woowahan Brothers, 1942 report : Johan Holmdahl</p>
                     <p>Lettering by Joyce Foo Tam Fong
                     </p>
+                    <br>
+                    <p>Illustrations : Joyce Foo Tam Fong</p>
+                    <p>Fictional branding : Joyce Foo Tam Fong </p>
                 </div>
             </div>
             <a href="./index.html#selected-work" class="page-footer">GO BACK TO PROJECTS</a>
@@ -522,23 +540,20 @@
 
 <style>
 .copy-gallery{
-    height: 500vh;
+    height: 600vh;
 }
 .copy-gallery-2{
-    height: 300vh;
+    height: 340vh;
 }
 .more{
     height: 500vh;
 }
 @media (max-width: 768px) {
     .copy-gallery{
-        height: 400vh;
-    }
-    .copy-gallery #twovisuals{
-        height: 600vh;
+        height: 300vh;
     }
     .copy-gallery-2{
-        height: 180vh;
+        height: 200vh;
     }
     .more{
         height: 300vh;
@@ -549,16 +564,18 @@
     document.addEventListener("DOMContentLoaded", () => {
         const galleryItems = document.querySelectorAll(".visual");
         const images = [
-            './img/projects/un-trop-de-si-2024/untropdesi-book-open-3.jpg',
+            './img/projects/un-trop-de-si-2024/untropdesi-book-1.jpg',
+
             './img/projects/un-trop-de-si-2024/untropdesi-book.jpg',
             './img/projects/un-trop-de-si-2024/untropdesi-book-2.jpg',
             './img/projects/un-trop-de-si-2024/untropdesi-book-8.jpg',
             './img/projects/un-trop-de-si-2024/untropdesi-book-9.jpg',
-            './img/projects/un-trop-de-si-2024/untropdesi-book-3.jpg',
+            './img/projects/un-trop-de-si-2024/untropdesi-peek.jpg',
             './img/projects/un-trop-de-si-2024/untropdesi-book-4.jpg',
+            './img/projects/un-trop-de-si-2024/untropdesi-book-3.jpg',
             './img/projects/un-trop-de-si-2024/untropdesi-book-6.jpg',
 
-
+            './img/projects/un-trop-de-si-2024/untropdesi-book-open-3.jpg',
             './img/projects/un-trop-de-si-2024/untropdesi-book-5.jpg',
             './img/projects/un-trop-de-si-2024/untropdesi-book-7.jpg',
             './img/projects/un-trop-de-si-2024/untropdesi-book-open-7.jpg',
