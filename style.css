@@ -237,7 +237,7 @@ ul{
         height: 100vh;
     }
     .menu-container-1 .menu-container-header {
-        padding-top: 2vh;
+        padding-top: 1vh;
     }
     .menu-container-1 .menu-container-header li,
     .menu-container-1 .menu-container-footer li,
@@ -262,7 +262,7 @@ ul{
     }
     .menu-container-1 .menu-container-footer,
     .menu-container-2 .menu-container-footer{
-        padding-bottom: 2vh;
+        margin-bottom: 4vh;
     }
     
 }
