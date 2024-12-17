@@ -175,7 +175,7 @@ const data = [
             './img/vignettes/guilaine-phone-2.jpg',
             './img/vignettes/atelier-de-guilaine.jpg',
         ],
-        content: '. frontend. print',
+        content: '. frontend. editorial',
         field: 'front',
         link: 'atelierdeguilaine.html'
     },
