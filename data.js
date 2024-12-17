@@ -69,7 +69,7 @@ const data = [
     //     ],
     //     content: '. animation. print',
     //     field: 'other',
-    //     link: '/yomama.html'
+    //     link: 'yomama.html'
     // },
     // {
     //     title: 'Une si longue lettre',
