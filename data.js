@@ -59,18 +59,18 @@ const data = [
         field: 'prints',
         link: 'party-goers.html'
     },
-    // {
-    //     title: 'Yo Mama',
-    //     type: 'personal project',
-    //     date: '2024',
-    //     images: [
-    //         './img/vignettes/yo-mama-riso.jpg',
-    //         './img/projects/yo-mama-2024/yo-mama-star.png',
-    //     ],
-    //     content: '. animation. print',
-    //     field: 'other',
-    //     link: 'yomama.html'
-    // },
+    {
+        title: 'Yo Mama',
+        type: 'personal project',
+        date: '2024',
+        images: [
+            './img/vignettes/yo-mama-riso.jpg',
+            './img/projects/yo-mama-2024/yo-mama-star.png',
+        ],
+        content: '. animation. print',
+        field: 'other',
+        link: 'yomama.html'
+    },
     // {
     //     title: 'Une si longue lettre',
     //     type: 'personal project',
