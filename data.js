@@ -55,7 +55,7 @@ const data = [
             './img/projects/party-goers/party-goers-both.jpg',
             './img/vignettes/party-goers-both-3.jpg',
         ],
-        content: '. zine',
+        content: '. zine. prints',
         field: 'prints',
         link: 'party-goers.html'
     },
