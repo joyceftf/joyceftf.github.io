@@ -1427,7 +1427,7 @@ a.view_link {
     font-weight: bold;
     cursor: pointer;
     border: solid 2px var(--light-color);
-    padding: .5rem 28rem;
+    padding: .5rem 7rem;
     display: block;
     text-align: center;
 }
