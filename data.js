@@ -7,7 +7,7 @@ const data = [
             './img/projects/coffret-bhansali-2024/expo-coffret-3.jpg',
             './img/vignettes/devdas-ramleela-books.jpg',
         ],
-        content: '. editorial',
+        content: '.editorial .artistic direction',
         field: 'editorial',
         link: 'bhansali.html'
     },
@@ -19,7 +19,7 @@ const data = [
             './img/projects/collection/luisirophile-book-2.jpg',
             './img/projects/collection/luisirophile-doc.jpg',
         ],
-        content: '. editorial. photo',
+        content: '.editorial .photo',
         field: 'editorial',
         link: 'luisirophilie.html'
     },
@@ -43,7 +43,7 @@ const data = [
             './img/projects/sketch-and-play-2023/sketchplay6.jpg',
             './img/projects/sketch-and-play-2023/sketchplay.jpg',
         ],
-        content: '. signage. merch',
+        content: '.signage .merch',
         field: 'other',
         link: 'sketchandplay.html'
     },
@@ -55,7 +55,7 @@ const data = [
             './img/projects/party-goers/party-goers-both.jpg',
             './img/vignettes/party-goers-both-3.jpg',
         ],
-        content: '. zine. prints',
+        content: '.editorial .prints',
         field: 'prints',
         link: 'party-goers.html'
     },
@@ -67,7 +67,7 @@ const data = [
             './img/vignettes/yo-mama-riso.jpg',
             './img/projects/yo-mama-2024/yo-mama-star.png',
         ],
-        content: '. animation. print',
+        content: '.animation .prints',
         field: 'other',
         link: 'yomama.html'
     },
@@ -163,7 +163,7 @@ const data = [
             './img/vignettes/magazine.jpg',
             './img/vignettes/magazine-2.jpg',
         ],
-        content: '. editorial',
+        content: '.editorial .artistic direction',
         field: 'editorial',
         link: 'clubzinzine.html'
     },
@@ -175,7 +175,7 @@ const data = [
             './img/vignettes/guilaine-phone-2.jpg',
             './img/vignettes/atelier-de-guilaine.jpg',
         ],
-        content: '. frontend. editorial',
+        content: '.frontend .editorial',
         field: 'front',
         link: 'atelierdeguilaine.html'
     },
@@ -235,7 +235,7 @@ const data = [
             './img/vignettes/untropdesi-2.jpg',
             './img/vignettes/untropdesi.jpg',
         ],
-        content: '. editorial. illustration',
+        content: '.editorial .illustration',
         field: 'editorial',
         link: 'untropdesi.html'
     },
