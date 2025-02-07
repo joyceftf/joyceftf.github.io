@@ -635,6 +635,9 @@ ul{
     height: 100%;
     object-fit: cover;
 }
+#row-2 .img-container.left{
+    width: 40%;
+}
 .img-container h4{
     font-weight: 400;
     font-size: clamp(1.5rem, 3vw, 2rem);
@@ -659,9 +662,9 @@ ul{
         text-align: justify;
         hyphens: auto;
         font-size: clamp(1rem, -1.75rem + 7.3333vw, 1.2rem);
-        line-height: 1;
-        text-transform: none;
+        line-height: 1.3;
         font-weight: normal;
+        text-transform: normal;
     }
     #row-1{
         width: 120%;
@@ -669,7 +672,7 @@ ul{
         padding-right: 2rem;
     }
     #row-2{
-        width: 110%;
+        width: 150%;
         margin-left: 0;
         padding-left: 2rem;
     }
@@ -1088,6 +1091,10 @@ a.view_link {
     white-space: nowrap;
 }
 
+.projects .view_wrapper{
+    overflow:scroll;
+}
+
 @media screen and (max-width: 480px) {
     .nav-projects{
         margin-top: 0;
@@ -1118,7 +1125,6 @@ a.view_link {
     }
     .projects .view_wrapper{
         margin-top: 2.5vh;
-        overflow:scroll;
     }
     .projects .view_item{
         flex-direction: row-reverse;
