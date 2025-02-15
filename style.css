@@ -1558,11 +1558,18 @@ header .menu-items2 .contact-shop{
 
 
 .products-gallery{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    padding: 8rem 3rem 0 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 20vh 3vw ;
+}
+.products-gallery p{
+    color: var(--light-color);
+    opacity: 0.9;
+    line-height: 1.3;
+    text-align: justify;
+    text-transform: none;
+    hyphens: auto;
+    text-align-last: left;
 }
 .products-gallery .tags-wrapper{
     display: flex;
@@ -1575,19 +1582,114 @@ header .menu-items2 .contact-shop{
     font-weight: normal;
     text-transform: uppercase;
 }
-.info1 li, .info2 li{
-    border: var(--mid-color) 1.5px solid;
-    color: var(--mid-color);
+.products-gallery .overlay{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 80%;
+}
+.products-gallery button {
+    display: block;
+    font-size: .9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--soft-accent-color);
+    border: solid 2px var(--dark-color);
+    background-color: var(--dark-color);
+    padding: .5rem 3rem;
+    text-align: center;
+    opacity: 0;
+}
+.products-gallery .figure1:hover .figure-img, .figure2:hover .figure-img, .figure3:hover .figure-img, .figure4:hover .figure-img, .figure5:hover .figure-img, .figure6:hover .figure-img, .figure7:hover .figure-img, .figure8:hover .figure-img, .figure9:hover .figure-img {
+    opacity: 0.3;
+    transition: all 0.5s ease;
+}
+.products-gallery .overlay h3, .products-gallery .overlay p {
+    opacity: 0;
+    margin-bottom: 1rem;
+    color: var(--light-color);
+    line-height: 1.3;
+}
+.products-gallery .figure1:hover button, .figure2:hover button, .figure3:hover button, .figure4:hover button, .figure5:hover button, .figure6:hover button, .figure7:hover button, .figure8:hover button, .figure9:hover button,
+.figure1:hover h3, .figure2:hover h3, .figure3:hover h3, .figure4:hover h3, .figure5:hover h3, .figure6:hover h3, .figure7:hover h3, .figure8:hover h3, .figure9:hover h3,
+.figure1:hover p, .figure2:hover p, .figure3:hover p, .figure4:hover p, .figure5:hover p, .figure6:hover p, .figure7:hover p, .figure8:hover p, .figure9:hover p {
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+.products-gallery button:hover{
+    padding: .5rem .5rem;
+    transition: all ease .5s;
+    border: solid 2px var(--soft-accent-color);
+    background-color: var(--soft-accent-color);
+}
+.products-gallery a{
+    text-decoration: none;
+    color: var(--strong-accent-color);
+    font-weight: bold;
+}
+.products-gallery button:hover a{
+    color: var(--strong-accent-color);
+    transition: all 0.5s ease;
+}
+
+.info1, .info2 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.info3 {
+    grid-column: span 2;
+}
+.info1, .info2, .info3{
+    padding: 2.5rem;
+    background-color: var(--mid-color);
+    color: var(--light-color);
+    overflow: hidden;
+}
+.info1 li, .info2 li, .info3 li {
+    border: var(--dark-color) 1.5px solid;
+    color: var(--dark-color);
     border-radius: 20px;
     padding: .5rem;
 }
-.info1:hover li, .info2:hover li{
+.info1:hover li, .info2:hover li, .info3:hover li {
     border: var(--strong-accent-color) 1.5px solid;
     border-radius: 20px;
     color: var(--strong-accent-color);
     transition: all 0.5s ease;
 }
 
-@media (min-width: 600px) {
-    
+.figure1 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.figure4 {
+    grid-column: span 2;
+}
+.figure9 {
+    grid-column: span 2;
+}
+.figure1, .figure2, .figure3, .figure4, .figure5, .figure6, .figure7, .figure8, .figure9{ 
+    position: relative;
+}
+.figure-img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+    .products-gallery{
+        display: flex;
+        flex-direction: column;
+        padding: 20vh 10vw;
+    }
+    .figure1 {
+        grid-column: span 1;
+    }
 }
