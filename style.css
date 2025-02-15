@@ -1561,6 +1561,7 @@ header .menu-items2 .contact-shop{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding: 20vh 3vw ;
+    height: 20%;
 }
 .products-gallery p{
     color: var(--light-color);
@@ -1637,11 +1638,11 @@ header .menu-items2 .contact-shop{
     transition: all 0.5s ease;
 }
 
-.info1, .info2 {
+.info1, .info3 {
     grid-column: span 1;
     grid-row: span 1;
 }
-.info3 {
+.info2 {
     grid-column: span 2;
 }
 .info1, .info2, .info3{
@@ -1663,12 +1664,9 @@ header .menu-items2 .contact-shop{
     transition: all 0.5s ease;
 }
 
-.figure1 {
+.figure1, .figure2 {
     grid-column: span 2;
     grid-row: span 1;
-}
-.figure4 {
-    grid-column: span 2;
 }
 .figure9 {
     grid-column: span 2;
