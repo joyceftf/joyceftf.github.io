@@ -1741,6 +1741,15 @@ header .menu-items2 .contact-shop{
 .info-product{
     grid-column: span 4;
 }
+.info-product p{
+    color: var(--light-color);
+    opacity: 0.9;
+    line-height: 1.3;
+    text-align: justify;
+    text-transform: none;
+    hyphens: auto;
+    text-align-last: left;
+}
 
 @media screen and (max-width: 480px) {
     .page-product{
@@ -1754,7 +1763,7 @@ header .menu-items2 .contact-shop{
 }
 
 
-.pp-XM4VETAF6SJRA{
+.pp-XM4VETAF6SJRA, .pp-MLEZFY9M7R4VE{
     text-align:center;
     border:none;
     border-radius:25rem;
@@ -1768,7 +1777,7 @@ header .menu-items2 .contact-shop{
     line-height:1.3rem;
     cursor:pointer;
 }
-.pp-XM4VETAF6SJRA:hover{
+.pp-XM4VETAF6SJRA:hover, .pp-MLEZFY9M7R4VE:hover{
     background-color: var(--soft-accent-color);
     color: var(--light-color);
     transition: all 0.5s ease;
@@ -1781,7 +1790,7 @@ header .menu-items2 .contact-shop{
 }
 
 @media screen and (max-width: 480px) {
-    .pp-XM4VETAF6SJRA{
+    .pp-XM4VETAF6SJRA, .pp-MLEZFY9M7R4VE{
         min-width: 7rem;
         height: 2rem;
         font-size: .9rem;
