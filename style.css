@@ -1745,6 +1745,32 @@ header .menu-items2 .contact-shop{
     }
 }
 
+.pp-XM4VETAF6SJRA{
+    text-align:center;
+    border:none;
+    border-radius:25rem;
+    min-width:11.625rem;
+    padding:0 2rem;
+    height:2.625rem;
+    font-weight:bold;
+    background-color:var(--mid-color);
+    color:var(--strong-accent-color);
+    font-size:1rem;
+    line-height:1.3rem;
+    cursor:pointer;
+}
+.pp-XM4VETAF6SJRA:hover{
+    background-color: var(--soft-accent-color);
+    color: var(--light-color);
+    transition: all 0.5s ease;
+}
+.buy-product form{
+    display:inline-grid;
+    justify-items:center;
+    align-content:start;
+    gap:0.5rem;
+}
+
 
 
 .thanks{
