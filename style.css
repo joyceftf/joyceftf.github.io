@@ -1764,8 +1764,8 @@ header .menu-items2 .contact-shop{
 }
 .thanks h4{
     font-size: 14px;
-    color: var(--mid-color);
     text-transform: uppercase;
+    color: var(--strong-accent-color);
 }
 .thanks p{
     color: var(--mid-color);
