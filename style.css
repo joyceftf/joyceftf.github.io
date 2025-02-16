@@ -590,7 +590,7 @@ ul{
     color: var(--mid-color);
     text-transform: uppercase;
     font-size: clamp(1rem, 2.5vw, 1.2rem);
-    margin: 20px 2px;
+    margin: 2rem 2px;
     font-weight: normal;
     overflow: hidden;
 }
@@ -1309,7 +1309,7 @@ a.view_link {
 .copy{
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 2rem;
     border: 1.5px solid;
 }
 
@@ -1348,12 +1348,12 @@ a.view_link {
 #section-1 .copy li{
     border: var(--mid-color) 1.5px solid;
     color: var(--mid-color);
-    border-radius: 20px;
+    border-radius: 2rem;
     padding: .5rem;
 }
 #section-1:hover .copy li{
     border: var(--strong-accent-color) 1.5px solid;
-    border-radius: 20px;
+    border-radius: 2rem;
     color: var(--strong-accent-color);
     transition: all 0.5s ease;
 }
@@ -1654,12 +1654,12 @@ header .menu-items2 .contact-shop{
 .info1 li, .info2 li, .info3 li {
     border: var(--dark-color) 1.5px solid;
     color: var(--dark-color);
-    border-radius: 20px;
+    border-radius: 2rem;
     padding: .5rem;
 }
 .info1:hover li, .info2:hover li, .info3:hover li {
     border: var(--strong-accent-color) 1.5px solid;
-    border-radius: 20px;
+    border-radius: 2rem;
     color: var(--strong-accent-color);
     transition: all 0.5s ease;
 }
@@ -1690,4 +1690,74 @@ header .menu-items2 .contact-shop{
     .figure1 {
         grid-column: span 1;
     }
+}
+
+
+.scroll-container {
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+  }
+.scroll-container img {
+    height: 70vh;
+  }
+
+.page-product{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 10vh 5vw 10vh 5vw;
+}
+.page-product h2{
+    font-weight: bold;
+    font-size: clamp(2rem, -1.75rem + 7.3333vw, 3.75rem);
+    text-transform: uppercase;
+    color: var(--strong-accent-color);
+}
+.category-product .tags-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.category-product .tags-wrapper .tag{
+    font-size: clamp(.75rem, -1.75rem + 7.3333vw, 1rem);
+    font-weight: normal;
+    text-transform: uppercase;
+    border: var(--mid-color) 1.5px solid;
+    color: var(--mid-color);
+    border-radius: 2rem;
+    padding: .5rem;
+}
+.info-product{
+    grid-column: span 4;
+}
+
+@media screen and (max-width: 480px) {
+    .page-product{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 10vh 5vw 10vh 5vw;
+    }
+    .info-product{
+        grid-column: span 3;
+    }
+}
+
+
+
+.thanks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 4rem;
+}
+.thanks h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: var(--light-color);
 }
