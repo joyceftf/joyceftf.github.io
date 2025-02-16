@@ -1739,6 +1739,9 @@ header .menu-items2 .contact-shop{
     hyphens: auto;
     text-align-last: left;
 }
+.buy-product{
+    padding-left: 2rem;
+}
 
 @media screen and (max-width: 480px) {
     .page-product{
@@ -1783,6 +1786,9 @@ header .menu-items2 .contact-shop{
         min-width: 7rem;
         height: 2rem;
         font-size: .9rem;
+    }
+    .category-product{
+        display: none;
     }
 }
 
