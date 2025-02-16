@@ -1745,6 +1745,7 @@ header .menu-items2 .contact-shop{
     }
 }
 
+
 .pp-XM4VETAF6SJRA{
     text-align:center;
     border:none;
@@ -1769,6 +1770,14 @@ header .menu-items2 .contact-shop{
     justify-items:center;
     align-content:start;
     gap:0.5rem;
+}
+
+@media screen and (max-width: 480px) {
+    .pp-XM4VETAF6SJRA{
+        min-width: 7rem;
+        height: 2rem;
+        font-size: .9rem;
+    }
 }
 
 
