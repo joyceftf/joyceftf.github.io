@@ -602,6 +602,9 @@ ul{
     font-weight: lighter;
 }
 
+.container{
+    overflow: hidden;
+}
 .img-container{
     width: 30%;
     height: fit-content;
@@ -822,6 +825,9 @@ ul{
     }
     .exp-info, .exp-date {
         font-weight: normal;
+    }
+    .exp-date{
+        overflow: scroll;
     }
     .exp-info{
         flex: 3;
