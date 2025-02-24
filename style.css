@@ -623,9 +623,9 @@ ul{
     }
     .intro-copy p{
         font-size: clamp(1.2rem, -1.75rem + 7.3333vw, 1.5rem);
+        font-weight: normal;
         text-align: justify;
         hyphens: auto;
-        font-weight: normal;
     }
 }
 .img-container.left{
@@ -635,6 +635,18 @@ ul{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+#row-1, #row-3{
+    margin-left: 10vw;
+}
+#row-4{
+    margin-left: 15vw;
+}
+#row-5{
+    margin-left: 20vw;
+}
+#row-6{
+    margin-left: 30vw;
 }
 #row-2 .img-container.left{
     width: 40%;
@@ -656,48 +668,26 @@ ul{
     position: relative;
     padding: .3rem .3rem;
     opacity: 0.9;
+    text-align: justify;
+    hyphens: auto;
 }
 
 @media screen and (max-width: 480px) {
     .img-container p{
-        text-align: justify;
-        hyphens: auto;
         font-size: clamp(1rem, -1.75rem + 7.3333vw, 1.2rem);
         line-height: 1.3;
         font-weight: normal;
         text-transform: normal;
     }
-    #row-1{
-        width: 120%;
-        margin-right: 0;
-        padding-right: 2rem;
+    #row-1, #row-2, #row-3, #row-4, #row-5, #row-6{
+        width: 160%;
+        margin-left: -10.25rem;
     }
-    #row-2{
-        width: 150%;
-        margin-left: 0;
-        padding-left: 2rem;
+    #row-2, #row-4, #row-6{
+        margin-left: -2.25rem;
     }
-    #row-3{
-        width: 120%;
-        margin-right: 0;
-        padding-right: 2rem;
-    }
-    #row-4{
-        width: 110%;
-        margin-left: 0;
-        padding-left: 2rem;
-    }
-    #row-5{
-        width: 125%;
-        margin-right: 0;
-        padding-right: 2rem;
-        margin-left: 0;
-        padding-left: 0;
-    }
-    #row-6{
-        width: 95%;
-        margin-left: 0;
-        padding-left: 2rem;
+    #row-2 .img-container.left{
+        width: 60%;
     }
     .img-container h4{
         margin-top: .6rem;
@@ -780,7 +770,7 @@ ul{
     display: flex;
 }
 .exp-item p{
-    color: black;
+    color: var(--mid-color);
     opacity: 0.9;
     width: 100%;
     position: absolute;
@@ -804,11 +794,12 @@ ul{
 }
 .exp-date{
     text-align: right;
+    overflow: hidden;
 }
 .exp-name{
     flex: 4;
     height: 5vh;
-    color: black;
+    color: var(--mid-color);
     text-transform: uppercase;
     font-size: clamp(1.5rem, 3vw, 2rem);
     text-align: center;
@@ -841,32 +832,33 @@ ul{
         hyphens: auto;
     }
     .exp-name{
-        text-align: right;
+        text-align: center;
         height: 20vh;
         overflow: hidden;
     }
-    .exp-item:nth-child(2), .exp-item:nth-child(3){
-        height: 15vh;
+    .exp-item:nth-child(2){
+        height: 18vh;
+        overflow: hidden;
+    }
+    .exp-item:nth-child(3){
+        height: 14vh;
         overflow: hidden;
     }
     .exp-item:nth-child(4){
-        height: 8vh;
+        height: 18vh;
         overflow: hidden;
     }
-    .exp-item:nth-child(5){
-        height: 8vh;
+    .exp-item:nth-child(5), .exp-item:nth-child(6){
+        height: 11vh;
         overflow: hidden;
     }
-    .exp-item:nth-child(6){
+    .exp-item:nth-child(7){
         height: 18vh;
         overflow: hidden;
     }
     .exp-name p{
         font-size: clamp(1.2rem, -1.75rem + 7.3333vw, 1.5rem);
         line-height: 1.3;
-    }
-    .exp-date{
-        display: none;
     }
     .preview-img img{
         height: 20vh;
@@ -925,10 +917,11 @@ ul{
     text-transform: uppercase;
     color: var(--mid-color);
     padding: 0 0.3rem;
+    line-height: 1.3;
 }
 .notice-container-1:hover h3, .notice-container-1:hover p,
 .notice-container-2:hover h3, .notice-container-2:hover p{
-    color: var(--soft-accent-color);
+    color: var(--strong-accent-color);
     transition: all 0.5s ease;
 }
 
@@ -951,8 +944,7 @@ ul{
     }
     .notice-container p{
         font-size: clamp(1.2rem, -1.75rem + 7.3333vw, 1.5rem);
-        text-align: justify;
-        hyphens: auto;
+        hyphens:auto;
     }
     .notice-container{
         flex-direction: column;
@@ -1745,12 +1737,19 @@ header .menu-items2 .contact-shop{
 
 @media screen and (max-width: 480px) {
     .page-product{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        padding: 10vh 5vw 10vh 5vw;
+        display: flex;
+        flex-direction: column;
+        padding: 7vh 7vw 3vh 7vw;
     }
     .info-product{
         grid-column: span 3;
+    }
+    .info-product p{
+        text-align: left;
+    }
+    .buy-product{
+        padding: 2rem 0;
+        text-align: center;
     }
 }
 
