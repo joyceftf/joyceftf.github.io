@@ -19,8 +19,8 @@ const data = [
             './img/projects/collection/luisirophile-book-2.jpg',
             './img/projects/collection/luisirophile-doc.jpg',
         ],
-        content: '.editorial .photo',
-        field: 'editorial',
+        content: '.photography .editorial ',
+        field: 'photography',
         link: 'luisirophilie.html'
     },
     // {
@@ -43,7 +43,7 @@ const data = [
             './img/projects/sketch-and-play-2023/sketchplay6.jpg',
             './img/projects/sketch-and-play-2023/sketchplay.jpg',
         ],
-        content: '.signage .merch',
+        content: '.signage .merch .illustration',
         field: 'other',
         link: 'sketchandplay.html'
     },
@@ -67,7 +67,7 @@ const data = [
             './img/vignettes/yo-mama-riso.jpg',
             './img/projects/yo-mama-2024/yo-mama-star.png',
         ],
-        content: '.animation .prints',
+        content: '.animation .illustration .prints',
         field: 'other',
         link: 'yomama.html'
     },
@@ -151,7 +151,7 @@ const data = [
             './img/projects/proseandpoetry-2023/compo-riso-11.jpg',
             './img/vignettes/riso.jpg',
         ],
-        content: '. editorial',
+        content: '.editorial .lettering',
         field: 'editorial',
         link: 'proseandpoetry.html'
     },
@@ -175,7 +175,7 @@ const data = [
             './img/vignettes/guilaine-phone-2.jpg',
             './img/vignettes/atelier-de-guilaine.jpg',
         ],
-        content: '.frontend .editorial',
+        content: '.frontend .branding .editorial',
         field: 'front',
         link: 'atelierdeguilaine.html'
     },
@@ -211,7 +211,7 @@ const data = [
     //         './img/vignettes/prints.jpg',
     //         './img/vignettes/prints-2.jpg',
     //     ],
-    //     content: '. merch. illustration',
+    //     content: '.merch .illustration',
     //     field: 'prints',
     //     link: 'prints.html'
     // },
@@ -223,7 +223,7 @@ const data = [
     //         './img/vignettes/colliers.jpg',
     //         './img/vignettes/bde-tape.jpg',
     //     ],
-    //     content: '. merch. illustration',
+    //     content: '.merch .branding .illustration',
     //     field: 'other',
     //     link: 'stickers.html'
     // },
@@ -235,9 +235,21 @@ const data = [
             './img/vignettes/untropdesi-2.jpg',
             './img/vignettes/untropdesi.jpg',
         ],
-        content: '.editorial .illustration',
+        content: '.editorial .illustration .branding',
         field: 'editorial',
         link: 'untropdesi.html'
+    },
+    {
+        title: 'R&AElig;NT',
+        type: 'personal project',
+        date: '2025',
+        images: [
+            './img/vignettes/raent-brochure-rv-w640.jpg',
+            './img/vignettes/40x60_01-w640.jpg',
+        ],
+        content: '.branding .editorial .lettering',
+        field: 'other',
+        link: 'raent.html'
     },
 ];
 
