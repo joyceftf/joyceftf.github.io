@@ -320,32 +320,35 @@ ul{
     height: 2rem;
     width: 2rem;
     stroke: var(--light-color);
-    cursor: pointer;
     z-index:2;
+    cursor: pointer;
     pointer-events: auto;
 }
 
 .nav .prev{
-    top:37rem;
+    bottom: 0.5rem;
     right:4rem;
     transform: scale(2);
 }
 .nav .next{
-    bottom:1.5rem;
+    top:36rem;
     right:4rem;
     transform: scale(2) rotate(180deg);
 }
 @media(max-width:480px) {
+    .card-slider {
+        height: 60vh;
+    }
     .marquee{
         font-size: clamp(1.1rem, 3vw, 1.5rem);
         font-weight: normal;
     }
     .nav .prev{
-        top: 34rem;
+        bottom: 6rem;
         right: 4rem;
     }
     .nav .next{
-        bottom: 15rem;
+        top: 14rem;
         right: 4rem;
     }
 }
@@ -436,7 +439,7 @@ ul{
         font-size: clamp(2rem, 9vw, 3.5rem);
     }
     .item-counter{
-        bottom: 25%;
+        bottom: 17%;
     }
 }
 

@@ -28,10 +28,10 @@ const data = [
     //     type: 'commissioned',
     //     date: '2024',
     //     images: [
-    //         './img/vignettes/frat7yearslater-fev-2024-night-w640.webp',
-    //         './img/vignettes/frat7yearslater-fev-2024-w640.webp',
+    //         './img/vignettes/frat7yl-w640.jpg',
+    //         './img/vignettes/frat-icon-navbar.jpg',
     //     ],
-    //     content: '. assets',
+    //     content: '.ui .artistic direction',
     //     field: 'front',
     //     link: 'frat7yl.html'
     // },
@@ -225,7 +225,7 @@ const data = [
     //     ],
     //     content: '.merch .branding .illustration',
     //     field: 'other',
-    //     link: 'stickers.html'
+    //     link: 'bde-2024.html'
     // },
     {
         title: 'Un trop de Si',
