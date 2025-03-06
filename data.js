@@ -43,7 +43,7 @@ const data = [
             './img/projects/sketch-and-play-2023/sketchplay6.jpg',
             './img/projects/sketch-and-play-2023/sketchplay.jpg',
         ],
-        content: '.signage .merch .illustration',
+        content: '.signage .illustration .merch',
         field: 'other',
         link: 'sketchandplay.html'
     },
@@ -67,7 +67,7 @@ const data = [
             './img/vignettes/yo-mama-riso.jpg',
             './img/projects/yo-mama-2024/yo-mama-star.png',
         ],
-        content: '.animation .illustration .prints',
+        content: '.motion design .illustration .prints',
         field: 'other',
         link: 'yomama.html'
     },
@@ -247,7 +247,7 @@ const data = [
             './img/vignettes/raent-brochure-rv-w640.jpg',
             './img/vignettes/40x60_01-w640.jpg',
         ],
-        content: '.branding .editorial .lettering',
+        content: '.branding .editorial .motion design .lettering',
         field: 'other',
         link: 'raent.html'
     },
