@@ -23,18 +23,18 @@ const data = [
         field: 'photography',
         link: 'luisirophilie.html'
     },
-    // {
-    //     title: 'FRAT7YL',
-    //     type: 'commissioned',
-    //     date: '2024',
-    //     images: [
-    //         './img/vignettes/frat7yl-w640.jpg',
-    //         './img/vignettes/frat-icon-navbar.jpg',
-    //     ],
-    //     content: '.ui .artistic direction',
-    //     field: 'front',
-    //     link: 'frat7yl.html'
-    // },
+    {
+        title: 'FRAT7YL',
+        type: 'commissioned',
+        date: '2024',
+        images: [
+            './img/vignettes/frat7yl-w640.jpg',
+            './img/vignettes/frat-icon-navbar.jpg',
+        ],
+        content: '.ui design .artistic direction',
+        field: 'web',
+        link: 'frat7yl.html'
+    },
     {
         title: 'Sketch & Play',
         type: 'collaboration',
@@ -175,8 +175,8 @@ const data = [
             './img/vignettes/guilaine-phone-2.jpg',
             './img/vignettes/atelier-de-guilaine.jpg',
         ],
-        content: '.frontend .branding .editorial',
-        field: 'front',
+        content: '.frontend .ui design .editorial',
+        field: 'web',
         link: 'atelierdeguilaine.html'
     },
     // {
@@ -188,7 +188,7 @@ const data = [
     //         './img/vignettes/nvm-2.jpg',
     //     ],
     //     content: '. assets',
-    //     field: 'front',
+    //     field: 'web',
     //     link: 'nelvesperomigrar.html'
     // },
     // {
