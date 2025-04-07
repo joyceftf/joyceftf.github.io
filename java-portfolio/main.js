@@ -122,12 +122,12 @@ var render = Render.create({
 });
 
 // create elements and ground
-var boxA = Bodies.circle(400, 200, 120, 10);
+var boxA = Bodies.circle(400, 200, 150, 10);
 // var boxB = Bodies.rectangle(450, 50, 80, 80);
 
-for (let i = 0; i < 11; i++) {
+for (let i = 0; i < 15; i++) {
   let circle = Bodies.circle(
-    i, 10, 120, {
+    i, 10, 150, {
       friction: 0.3,
       frictionAir: 0.00001,
       restitution: 0.8,
@@ -299,9 +299,6 @@ function openModal(item) {
 
   const img = document.createElement("img");
     img.src = `img/${sanitizeName(item.titre)}.jpg`;
-    img.alt = item.titre;
-    img.style.display = 'block';
-    img.style.objectFit = 'contain';
     fiche.appendChild(img);
 
   const close = document.createElement("div");
