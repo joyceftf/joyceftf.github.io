@@ -142,12 +142,12 @@ var render = Render.create({
 });
 
 // create elements and ground
-var boxA = Bodies.circle(400, 200, 150, 10);
+var boxA = Bodies.circle(400, 200, 130, 10);
 // var boxB = Bodies.rectangle(450, 50, 80, 80);
 
 for (let i = 0; i < 15; i++) {
   let circle = Bodies.circle(
-    i, 10, 150, {
+    i, 10, 130, {
       friction: 0.3,
       frictionAir: 0.00001,
       restitution: 0.8,
