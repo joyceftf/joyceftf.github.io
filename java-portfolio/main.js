@@ -3,7 +3,27 @@ const response = await fetch(sheets);
 const csvText = await response.text();
 
 const sanitizeName = (name) => {
-  const accentsMap = new Map([ ['á', 'a'], ['à', 'a'], ['â', 'a'], ['ä', 'a'], ['ã', 'a'], ['å', 'a'], ['é', 'e'], ['è', 'e'], ['ê', 'e'], ['ë', 'e'], ['í', 'i'], ['ì', 'i'], ['î', 'i'], ['ï', 'i'], ['ó', 'o'], ['ò', 'o'], ['ô', 'o'], ['ö', 'o'], ['õ', 'o'], ['ø', 'o'], ['ú', 'u'], ['ù', 'u'], ['û', 'u'], ['ü', 'u'], ['ý', 'y'], ['ÿ', 'y'], ['ñ', 'n'], ['ç', 'c'] ]);
+  const accentsMap = new Map([ 
+    ['á', 'a'], ['à', 'a'], ['â', 'a'], ['ä', 'a'], ['ã', 'a'], ['å', 'a'], 
+    ['é', 'e'], ['è', 'e'], ['ê', 'e'], ['ë', 'e'], 
+    ['í', 'i'], ['ì', 'i'], ['î', 'i'], ['ï', 'i'], 
+    ['ó', 'o'], ['ò', 'o'], ['ô', 'o'], ['ö', 'o'], ['õ', 'o'], ['ø', 'o'], 
+    ['ú', 'u'], ['ù', 'u'], ['û', 'u'], ['ü', 'u'], 
+    ['ý', 'y'], ['ÿ', 'y'], 
+    ['ñ', 'n'], ['ç', 'c'], 
+    ['Á', 'a'], ['À', 'a'], ['Â', 'a'], ['Ä', 'a'], ['Ã', 'a'], ['Å', 'a'], 
+    ['É', 'e'], ['È', 'e'], ['Ê', 'e'], ['Ë', 'e'], 
+    ['Í', 'i'], ['Ì', 'i'], ['Î', 'i'], ['Ï', 'i'], 
+    ['Ó', 'o'], ['Ò', 'o'], ['Ô', 'o'], ['Ö', 'o'], ['Õ', 'o'], ['Ø', 'o'], 
+    ['Ú', 'u'], ['Ù', 'u'], ['Û', 'u'], ['Ü', 'u'], 
+    ['Ý', 'y'], ['Ÿ', 'y'], 
+    ['Ñ', 'n'], ['Ç', 'c'], 
+    ['A', 'a'], ['B', 'b'], ['C', 'c'], ['D', 'd'], ['E', 'e'], ['F', 'f'], 
+    ['G', 'g'], ['H', 'h'], ['I', 'i'], ['J', 'j'], ['K', 'k'], ['L', 'l'], 
+    ['M', 'm'], ['N', 'n'], ['O', 'o'], ['P', 'p'], ['Q', 'q'], ['R', 'r'], 
+    ['S', 's'], ['T', 't'], ['U', 'u'], ['V', 'v'], ['W', 'w'], ['X', 'x'], 
+    ['Y', 'y'], ['Z', 'z'] 
+  ]);
   let sanitized = name.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   sanitized = Array.from(sanitized).map(char => accentsMap.get(char) || char).join('');
   return sanitized.replace(/[^A-Za-z0-9_\-]/g, '_');
@@ -298,7 +318,7 @@ function openModal(item) {
     overlay.appendChild(fiche);
 
   const img = document.createElement("img");
-    img.src = `./img/${sanitizeName(item.titre)}.jpg`;
+    img.src = `img/${sanitizeName(item.titre)}.jpg`;
     fiche.appendChild(img);
 
   const close = document.createElement("div");
