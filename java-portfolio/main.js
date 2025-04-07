@@ -298,7 +298,7 @@ function openModal(item) {
     overlay.appendChild(fiche);
 
   const img = document.createElement("img");
-    img.src = `img/${sanitizeName(item.titre)}.jpg`;
+    img.src = `./img/${sanitizeName(item.titre)}.jpg`;
     fiche.appendChild(img);
 
   const close = document.createElement("div");
