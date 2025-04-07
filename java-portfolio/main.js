@@ -122,17 +122,18 @@ var render = Render.create({
 });
 
 // create elements and ground
-var boxA = Bodies.circle(400, 200, 90, 90);
+var boxA = Bodies.circle(400, 200, 120, 10);
 // var boxB = Bodies.rectangle(450, 50, 80, 80);
 
 for (let i = 0; i < 11; i++) {
   let circle = Bodies.circle(
-    i, 10, 90, {
+    i, 10, 120, {
       friction: 0.3,
       frictionAir: 0.00001,
       restitution: 0.8,
-      label: `Circle Body ${i}` // Assign a unique label to each circle
+      label: `Circle Body ${i}` // assign a unique label to each circle
     });
+  
   circle.render.fillStyle = bgColors[Math.random() * bgColors.length | 0];
   Composite.add(engine.world, circle);
 }
@@ -197,11 +198,11 @@ var runner = Runner.create();
 Runner.run(runner, engine);
 
 function handleResize(matterContainer) {
-    // Update the renderer's dimensions
+    // update the renderer's dimensions
     render.canvas.width = matterContainer.clientWidth;
     render.canvas.height = matterContainer.clientHeight;
 
-    // Update the ground's position and size
+    // update the ground's position and size
     Matter.Body.setPosition(ground, 
       Matter.Vector.create(matterContainer.clientWidth/2, matterContainer.clientHeight+THICCNESS/2
       ));

@@ -25,23 +25,20 @@
     
     @font-face {
         font-family: 'Lowvetica';
-        src: url('./fonts/lowvetica/Lowvetica.ttf') format('ttf');
+        src: url('./fonts/lowvetica/Lowvetica.ttf') format('truetype');
         font-weight: normal;
-        font-style: normal;
     }
     
     @font-face {
         font-family: 'Lowvetica Bold';
-        src: url('./fonts/lowvetica/LowveticaBold.ttf') format('ttf');
+        src: url('./fonts/lowvetica/LowveticaBold.ttf') format('truetype');
         font-weight: bold;
-        font-style: normal;
     }
       
     @font-face {
         font-family: 'Lowvetica Ultra Bold';
-        src: url('./fonts/lowvetica/LowveticaUltraBold.ttf') format('ttf');
+        src: url('./fonts/lowvetica/LowveticaUltraBold.ttf') format('truetype');
         font-weight: bolder;
-        font-style: normal;
     }
 
     html, body{
@@ -122,9 +119,11 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      z-index: 1;
     }
 
     .header h1 a{
+      font-family: 'Lowvetica';
       color: white;
       font-size: 6rem;
       text-align: center;
@@ -132,17 +131,21 @@
       text-decoration: none;
     }
     .header h2{
+      font-family: 'Lowvetica Ultra Bold';
+      color: white;
+      line-height: 3rem;
+      font-size: 3rem;
       justify-content: center;
       text-align: center;
     }
     .header h2 a{
-      color: var(--text-color);
       text-decoration: none;
       font-family: 'Lowvetica Bold';
       line-height: 2rem;
     }
     .header h2 a:hover{
       text-decoration: underline white;
+      color: white;
       transition: all 0.3s ease;
     }
 
@@ -219,11 +222,11 @@
 </head>
 <body>
   <header class="header">
-    <h1><a href="index.html">javafolio</a></h1>
+    <h1><a href="index.html">Portfolio</a></h1>
     <br>
     <h2>Joyce Foo Tam Fong
       <br>
-      <a href="https://www.instagram.com/shawty.fr/">instagram</a> — <a href="www.linkedin.com/in/joyce-foo-tam-fong-a81395356">linkedin</a></h2>
+      <a href="mailto:joyftf@outlook.fr">email</a> <a href="https://www.instagram.com/shawty.fr/">instagram</a> <a href="www.linkedin.com/in/joyce-foo-tam-fong-a81395356">linkedin</a></h2>
   </header>
   <div class="matter-container" id="matter-container"></div>
   
