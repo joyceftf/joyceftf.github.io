@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberation leading the people</title>
+</head>
+<body>
+    <div class="profile-card">
+        <img src="header.png" alt="Profile" class="profile-img">
+        <h1 class="profile-name">Liberation leading the people</h1>
+        <p class="profile-bio">Sympathy. Empathy. Solidarity. <b>Nobody is free until everybody is free.</b> Support at your own discretion.</p>
+
+        <ul>
+            <li>
+                <a href="https://www.amnesty.org/en/location/europe-and-central-asia/eastern-europe-and-central-asia/armenia/report-armenia/" target="_blank">🇦🇲 Armenia</a>
+            </li>
+            <li>
+                <a href="https://www.cfr.org/global-conflict-tracker/conflict/violence-democratic-republic-congo" target="_blank">🇨🇩 Congo</a>
+            </li>
+            <li>
+                <a href="https://decol.guam.gov/" target="_blank">🇬🇺 Guam</a>
+            </li>
+            <li>
+                <a href="https://www.amnesty.org/en/location/middle-east-and-north-africa/north-africa/egypt/report-egypt/#:~:text=Economic%20and%20social%20rights%2C%20including,6%25%20of%20GDP%20to%20education." target="_blank">🇪🇬 Egypt</a>
+            </li>
+            <li>
+                <a href="https://news.un.org/en/story/2025/04/1162406" target="_blank">🇭🇹 Haiti</a>
+            </li>
+            <li>
+                <a href="https://www.nationofhawaii.org" target="_blank">🌺 Hawaii</a>
+            </li>
+            <li>
+                <a href="https://iranfreedom.org/en/" target="_blank">🇮🇷 Iran</a>
+            </li>
+            <li>
+                <a href="https://solidaritekanaky.fr/" target="_blank">🇳🇨 Kanaky</a>
+            </li>
+            <li>
+                <a href="https://www.justiceforall.org/free-kashmir/" target="_blank">🇵🇰 Kashmir</a>
+            </li>
+            <li>
+                <a href="https://thekurdishproject.org" target="_blank">🇹🇯 Kurdistan</a>
+            </li>
+            <li>
+                <a href="https://humanglemedia.com/nigerias-resurging-terror-attacks-amidst-global-displacement-crisis/" target="_blank">🇳🇬 Nigeria</a>
+            </li>
+            <li>
+                <a href="https://palestinecampaign.org/resources/history/" target="_blank">🇵🇸 Palestine</a>
+            </li>
+            <li>
+                <a href="https://www.prxpr.org" target="_blank">🇵🇷 Puerto Rico</a>
+            </li>
+            <li>
+                <a href="https://www.rescue.org/article/crisis-sudan-what-happening-and-how-help" target="_blank">🇸🇩 Sudan</a>
+            </li>
+            <li>
+                <a href="https://news.un.org/en/story/2025/05/1163541" target="_blank">🇸🇾 Syria</a>
+            </li>
+            <li>
+                <a href="https://www.freetigray.com/" target="_blank">🔺 Tigray</a>
+            </li>
+            <li>
+                <a href="https://war.ukraine.ua/" target="_blank">🇺🇦 Ukraine</a>
+            </li>
+            <li>
+                <a href="https://www.freewestpapua.org" target="_blank">⭐ West Papua</a>
+            </li>
+            <li>
+                <a href="https://www.justiceforall.org/save-uighur/" target="_blank">🌙 Xianjiang Uyghur region</a>
+            </li>
+            <li>
+                <a href="https://www.rescue.org/country/yemen" target="_blank">🇾🇪 Yemen</a>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <p>Curated by Daria Adonieva <a href="https://instagram.com/d_daria" target="_blank">@d_daria</a> et Joyce Foo Tam Fong <a href="https://instagram.com/shawty.fr" target="_blank">@shawty.fr</a> at ésad Amiens, Spring 2025
+        </p>
+    </footer>
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--light);
+        }
+
+        @media (min-width: 600px) {
+            .profile-card {
+                max-width: 400px;
+                padding: 40px;
+            }
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+        .profile-bio, a, p {
+            font-family: 'ITC Avant Garde Gothic', sans-serif;
+            font-weight: 400;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+        .profile-name {
+            font-family: 'ITC Avant Garde Gothic', sans-serif;
+            font-weight: 900;
+        }
+        :root {
+            --light: #CFC8B8;
+            --medium: #8B7B62;
+            --accent: #E5B358;
+            --dark: #533729;
+        }
+
+    .profile-card {
+        max-width: 80vw;
+        margin: 1rem 2rem;
+        padding: 10vw;
+        background: var(--light);
+        border-radius: 16px;
+        box-shadow: 0 0px 50px rgba(0,0,0,0.10);
+        text-align: center;
+        font-family: sans-serif;
+    }
+    .profile-img {
+        width: 100%;
+        max-width: 70vw;
+        height: auto;
+        margin-bottom: 16px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }
+    .profile-name {
+        font-size: 1.5em;
+        text-transform: uppercase;
+        color: var(--dark);
+    }
+    .profile-bio {
+        color: var(--medium);
+        margin-bottom: 24px;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        row-gap: 0;
+    }
+    li {
+        display: block;
+        padding: 1rem 0.5rem;
+        margin: 12px 0;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+    li:hover {
+        /* filter: blur(0); */
+        transition: 0.2s ease;
+        box-sizing: border-box;
+        border-bottom: 3px solid var(--dark);
+    }
+    li a {
+        color: var(--medium);
+        text-decoration: none;
+        font-weight: bold;
+        padding: 1rem 0;
+    }
+    li a:hover {
+        color: var(--dark);
+        transition: 0.2s ease;
+    }
+    footer {
+        text-align: center;
+        margin: 1rem 2rem;
+        font-size: 0.8em;
+        color: var(--medium);
+    }
+    footer a {
+        color: var(--medium);
+        text-decoration: none;
+        font-weight: bold;
+    }
+    footer a:hover {
+        color: var(--dark);
+        transition: 0.2s ease;
+    }
+    footer p {
+        margin: 0;
+    }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script>
+    gsap.from(".profile-card", {
+        duration: 1,
+        y: 50,
+        opacity: 0,
+        ease: "power3.out"
+    });
+    gsap.from(".profile-img", {
+        duration: 1,
+        scale: 0,
+        opacity: 0,
+        delay: 0.5,
+        ease: "back.out(1.7)"
+    });
+    gsap.from(".profile-name, .profile-bio, li", {
+        duration: 0.8,
+        opacity: 0,
+        y: 30,
+        stagger: 0.15,
+        delay: 1,
+        ease: "power2.out"
+    });
+    </script>
+</body>
+</html>
