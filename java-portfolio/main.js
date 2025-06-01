@@ -111,12 +111,12 @@ const csvToJson = (csvString) => {
 };
 
 const bgColors = [
-  "#74bdb6", "#ea7774", "rgba(255, 128, 255)", "#fa6403", "rgba(128, 128, 255)", "#dfaf29", "#fa6403"
+  "#74bdb6", "#ea7774", "rgba(255, 128, 255)", "#fa6403", "rgba(128, 128, 255)", "#dfaf29"
 ];
 
 
 const matterContainer = document.getElementById('matter-container');
-    const THICCNESS = 60;
+    const THICCNESS = 600;
 
     // module aliases
 var Engine = Matter.Engine,
@@ -154,9 +154,36 @@ for (let i = 0; i < 20; i++) {
       label: `Circle Body ${i}` // assign a unique label to each circle
     });
   
-  circle.render.fillStyle = bgColors[Math.random() * bgColors.length | 0];
+  circle.render.fillStyle = "#fa6403";
+  Matter.Body.setVelocity(circle, { x: 5 + Math.random() * 1, y: 2 + Math.random() * 1 });
   Composite.add(engine.world, circle);
 }
+
+
+Matter.Events.on(engine, 'collisionStart', function(event) {
+  var pairs = event.pairs;
+
+  // Find the currently dragged body (if any)
+  let draggedBody = mouseConstraint.body;
+
+  if (!draggedBody || !draggedBody.label.startsWith('Circle Body')) return;
+
+  for (var i = 0; i < pairs.length; i++) {
+    var pair = pairs[i];
+    // If the dragged body is involved in this collision
+    if (pair.bodyA === draggedBody || pair.bodyB === draggedBody) {
+      // Change color of all Circle Bodies involved in collision with dragged body to random bgColors
+      [pair.bodyA, pair.bodyB].forEach(body => {
+        if (body.label && body.label.startsWith('Circle Body')) 
+          {
+          body.render.fillStyle = bgColors[Math.floor(Math.random() * bgColors.length)]; 
+          }
+      });
+      break; // Only need to do this once per collision event
+    }
+  }
+});
+
 
 var ground = Bodies.rectangle(matterContainer.clientWidth/2,
   matterContainer.clientHeight+THICCNESS/2,
@@ -180,7 +207,7 @@ let rightWall = Bodies.rectangle(
   { isStatic: true }
 );
 let topWall = Bodies.rectangle(
-  matterContainer.clientWidth/2,
+  matterContainer.clientWidth + THICCNESS/2,
   0 - THICCNESS/2,
   matterContainer.clientWidth,
   THICCNESS,
@@ -250,12 +277,33 @@ const header = document.querySelector("header");
     header.classList.add("fixed");
 
 // Add event listener for clicks on circles
-Matter.Events.on(mouseConstraint, 'mousedown', function(event) {
-  const clickedBody = event.source.body;
+let isDragging = false;
+let dragStart = null;
 
-  if (clickedBody && linkedData[clickedBody.label]) {
-    const itemData = linkedData[clickedBody.label];
-    openModal(itemData);
+// Listen for drag start
+Matter.Events.on(mouseConstraint, "startdrag", function (event) {
+  if (event.body && event.body.label.startsWith('Circle Body')) {
+    isDragging = true;
+    dragStart = { x: event.mouse.absolute.x, y: event.mouse.absolute.y };
+  }
+});
+
+// Listen for drag end
+Matter.Events.on(mouseConstraint, "enddrag", function (event) {
+  if (event.body && event.body.label.startsWith('Circle Body')) {
+    // If mouse didn't move much, treat as click
+    const dragEnd = { x: event.mouse.absolute.x, y: event.mouse.absolute.y };
+    const dx = dragEnd.x - dragStart.x;
+    const dy = dragEnd.y - dragStart.y;
+    const distance = Math.sqrt(dx * dx + dy * dy);
+
+    if (distance < 5) {
+      // Open modal with linked data
+      const item = linkedData[event.body.label];
+      if (item) openModal(item);
+    }
+    isDragging = false;
+    dragStart = null;
   }
 });
 
@@ -322,14 +370,17 @@ function openModal(item) {
     fiche.appendChild(img);
 
   const close = document.createElement("div");
-  close.textContent = 'X';
-  close.style.marginTop = '10px';
+  close.textContent = '×';
+  close.style.display = 'block';
+  close.style.marginTop = 'auto';
+  close.style.marginBottom = 'auto';
+  close.style.textAlign = 'center';
   close.classList.add("close");
   overlay.appendChild(close);
 
   close.addEventListener("click", () => {
     document.body.removeChild(overlay);
-    mouseConstraint.body = null; // Unselect the clicked circle
+    mouseConstraint.body = null;
   });
 
   const titre = document.createElement("h1");
