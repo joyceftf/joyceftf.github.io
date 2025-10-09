@@ -659,8 +659,15 @@ ul{
     flex: 4;
 }
 
+#row-3{
+    hyphens: manual;
+}
+#row-3 i{
+    color: var(--mid-color);
+}
 #row-4{
     margin-left: 15.75rem;
+    hyphens: manual;
 }
 #row-6{
     margin-left: 26.25rem;
@@ -689,6 +696,9 @@ ul{
     opacity: 0.9;
     text-align: justify;
     hyphens: auto;
+}
+.img-container b{
+    color: var(--soft-accent-color);
 }
 
 @media screen and (max-width: 480px) {
