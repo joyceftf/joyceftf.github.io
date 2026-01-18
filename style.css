@@ -1658,33 +1658,36 @@ header .menu-items2 .contact-shop{
 }
 .products-gallery a{
     text-decoration: none;
-    display: block;
     font-size: .9rem;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
     color: var(--soft-accent-color);
     background-color: var(--dark-color);
-    padding: .5rem 3rem;
+    padding: .5rem 1rem;
     text-align: center;
+    width: fit-content;
 }
 .products-gallery .figure1:hover .overlay, .figure2:hover .overlay, .figure3:hover .overlay, .figure4:hover .overlay, .figure5:hover .overlay, .figure6:hover .overlay, .figure7:hover .overlay, .figure8:hover .overlay, .figure9:hover .overlay{
     opacity: 1;
     transition: all 0.5s ease;
 }
 .products-gallery a:hover {
-    color: var(--strong-accent-color);
-    transition: all 0.5s ease;
-    padding: .5rem .5rem;
-    transition: all ease .5s;
-    background-color: var(--soft-accent-color);
+    transition: all 0.3s ease;
+    background-color: var(--strong-accent-color);
+    width: fit-content;
+}
+.products-gallery .overlay button{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
 }
 
-.info1, .info3 {
+.info1, .info2 {
     grid-column: span 1;
     grid-row: span 1;
 }
-.info2 {
+.info3{
     grid-column: span 2;
 }
 .info1, .info2, .info3{
@@ -1707,15 +1710,9 @@ header .menu-items2 .contact-shop{
     transition: all 0.5s ease;
 }
 
-.figure1, .figure2 {
+.figure1, .figure2 , .figure3, .figure9 {
     grid-column: span 2;
     grid-row: span 1;
-}
-.figure3{
-    grid-column: span 2;
-}
-.figure9 {
-    grid-column: span 1;
 }
 .figure1, .figure2, .figure3, .figure4, .figure5, .figure6, .figure7, .figure8, .figure9{ 
     position: relative;
