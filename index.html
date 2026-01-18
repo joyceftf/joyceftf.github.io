@@ -9,6 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script type="module" src="./index.js"></script>
     <title>Joyce Foo Tam Fong — Portfolio</title>
 </head>
@@ -37,8 +38,8 @@
 
     <div class="spacer"></div>
 
-    <div class="marquee">
-        <!-- <div class="marquee-inner">
+    <!-- <div class="marquee">
+        <div class="marquee-inner">
             <div class="marquee-part">
                 Looking for an internship (Summer 2025)
                 <div class="arrow">
@@ -69,7 +70,7 @@
                     <span>&#8593;</span>
                 </div>
             </div>
-        </div> -->
+        </div>
     </div>
 
     <div class="card-slider">
@@ -149,22 +150,22 @@
         </div>
     </div>
 
-    <div class="spacer2"></div>
+    <div class="spacer2"></div>-->
 
     <div class="projects" id="selected-work">
         <div class="nav-projects">
             <div class="nav_wrapper">
-                <div class="nav_description">
-                    <p>selected work</p>
-                    <ul class="nav_list">
-                        <li class="nav_list_item active" data-filter="all">all</li>
-                        <li class="nav_list_item" data-filter="editorial">editorial</li>
-                        <li class="nav_list_item" data-filter="prints">prints</li>
-                        <li class="nav_list_item" data-filter="web">web design</li>
-                        <li class="nav_list_item" data-filter="photography">photography</li>
-                        <li class="nav_list_item" data-filter="other">other</li>
-                    </ul>
-                </div>
+            <div class="nav_description">
+                <ul class="nav_list">
+                <p>selected work</p>
+                <li class="nav_list_item active" data-filter="all">all</li>
+                <li class="nav_list_item" data-filter="editorial">editorial</li>
+                <li class="nav_list_item" data-filter="prints">prints</li>
+                <li class="nav_list_item" data-filter="web">web design</li>
+                <li class="nav_list_item" data-filter="photography">photography</li>
+                <li class="nav_list_item" data-filter="other">other</li>
+                </ul>
+            </div>
             </div>
         </div>
 
@@ -254,7 +255,7 @@
                 <li><a href="cv.html" id="link-page-footer">curriculum vitae</a></li>
                 <li><a href="mailto:joyftf@outlook.fr">joyftf@outlook.fr</a></li>
                 <li><a href="https://www.instagram.com/shawty.fr/">@shawty.fr</a></li>
-                <li><p>© 2024 Joyce Foo Tam Fong</p></li>
+                <li><p>© 2026 Joyce Foo Tam Fong</p></li>
             </ul>
         </div>
     </footer>
@@ -621,7 +622,15 @@
 </script>
 
 
-
+<script>
+    ScrollReveal().reveal('.view_item', {
+        duration: 1000,
+        distance: '30vh',
+        easing: 'ease-in-out',
+        interval: 200,
+        origin: 'bottom'
+    });
+</script>
 </body>
 
 </html>

@@ -998,7 +998,8 @@ ul{
 
 
 .projects{
-    margin-bottom: 4%;
+    margin: 0 0 2% 0;
+    width: fit-content;
 }
 .projects h1{
     font-size: 7vw;
@@ -1007,20 +1008,25 @@ ul{
     color: var(--strong-accent-color);
 }
 .projects li{
-    
     font-size: (1.5rem, 3vw, 2rem);
-    color: var(--light-color);
-    font-weight: lighter;
+    color: var(--mid-color);
+    font-weight: 400;
 }
 .projects span{
     font-size: 1.6rem;
 }
 
 .nav-projects{
-    position: absolute;
-    width: 100%;
+    flex-wrap: wrap;
+    position: sticky;
+    width: 45vw;
+    height: 6vh;
     overflow: hidden;
-    padding: 2rem 3.2rem 6rem 3.2rem;
+    top: 2rem; 
+    left:53%;
+    z-index: 1;
+    padding:1rem;
+    background-color: var(--dark-color);
 }
 
 .nav_wrapper{
@@ -1032,20 +1038,25 @@ ul{
 .nav_list{
     display: flex;
     width: 100%;
-    gap: 1.6rem;
+    gap: 1.4rem;
+    height: fit-content;
+    padding: 0;
     grid-area: 1/1/2/2;
 }
 
 .nav_list_item {
     cursor: pointer;
     z-index: 1;
-    font-size: clamp(1rem, -1.75rem + 7.3333vw, 1.25rem);
-    padding: 0 0.3rem;
+    font-size: clamp(0.5rem, -1.75rem + 7.3333vw, 1rem);
+    height: fit-content;
+    width: max-content;
 }
 .nav_list_item:hover {
     background: linear-gradient(98deg,var(--dark-color), var(--soft-accent-color)) var(--dark-color) no-repeat 0 0;
     background-size: 0 100%;
     animation: stripes 0.8s linear 1 forwards;
+    color: var(--light-color);
+    transition: color 0.2s ease;
 }
 @keyframes stripes {
     to {
@@ -1054,19 +1065,24 @@ ul{
   }
 .nav_list_item.active {
     background: var(--mid-color);
+    color: var(--strong-accent-color);
     background-size: 0 100%;
     padding: 0 0.3rem;
+    font-weight: 600;
 }
 
 .nav_description {
     grid-area: 1/2/2/3;
+    width: max-content;
+    height: fit-content;
 }
 .nav_description p {
     margin-bottom: 1.6rem;
-    color: var(--soft-accent-color);
+    color: var(--mid-color);
     font-weight: bold;
     text-transform: uppercase;
-    font-size: clamp(1.5rem, -1.75rem + 7.3333vw, 1.75rem);
+    font-size: clamp(0.5rem, -1.75rem + 7.3333vw, 1rem);
+    height: fit-content;
 }
 .nav_extra {
     grid-area: 1/3/2/4;
@@ -1075,9 +1091,8 @@ ul{
 .view {
     position: relative;
     width: 100%;
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
     overflow: hidden;
-    padding-top: 25vh;
 }
 .view_item {
     display: flex;
@@ -1105,7 +1120,6 @@ ul{
     width: 9rem;
     height: 9rem;
     object-fit: cover;
-    background-color: var(--dark-color);
 }
 
 .view_text{
@@ -1562,6 +1576,12 @@ header .logo2{
     text-decoration: none;
     color: var(--strong-accent-color);
 }
+#return a{
+    background-color: #914E56;}
+#return:hover a{
+    background-color: var(--soft-accent-color);
+    transition: all 0.3s ease;
+}
 header .menu-items2{
     display: flex;
     align-items: flex-end;
@@ -1672,6 +1692,7 @@ header .menu-items2 .contact-shop{
     background-color: var(--mid-color);
     color: var(--light-color);
     overflow: hidden;
+    height: 35vh;
 }
 .info1 li, .info2 li, .info3 li {
     border: var(--dark-color) 1.5px solid;
@@ -1690,11 +1711,15 @@ header .menu-items2 .contact-shop{
     grid-column: span 2;
     grid-row: span 1;
 }
-.figure9 {
+.figure3{
     grid-column: span 2;
+}
+.figure9 {
+    grid-column: span 1;
 }
 .figure1, .figure2, .figure3, .figure4, .figure5, .figure6, .figure7, .figure8, .figure9{ 
     position: relative;
+    height: 35vh;
 }
 .figure-img{
     display: block;
@@ -1716,9 +1741,9 @@ header .menu-items2 .contact-shop{
 
 .footer-shop{
     color: var(--mid-color);
-    font-size: 1rem;
+    font-size: 0.7rem;
     text-transform: uppercase;
-    padding: 1rem 3rem 3rem 3rem;
+    padding: 3rem 3rem 0 3rem;
     text-align: right;
 }
 
@@ -1737,7 +1762,7 @@ header .menu-items2 .contact-shop{
 .page-product{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding: 10vh 5vw 10vh 5vw;
+    padding: 5vh 5vw 0vh 5vw;
 }
 .page-product h2{
     font-weight: bold;
@@ -1772,6 +1797,10 @@ header .menu-items2 .contact-shop{
     hyphens: auto;
     text-align-last: left;
 }
+.info-product b{
+    color: var(--mid-color);
+    font-weight: bold;
+}
 .buy-product{
     padding-left: 2rem;
 }
@@ -1795,7 +1824,7 @@ header .menu-items2 .contact-shop{
 }
 
 
-.pp-XM4VETAF6SJRA, .pp-MLEZFY9M7R4VE{
+.pp-XM4VETAF6SJRA, .pp-MLEZFY9M7R4VE, .pp-H8LYVDHXCD732, .pp-H6KH2AZEKSNCJ{
     text-align:center;
     border:none;
     border-radius:25rem;
@@ -1809,7 +1838,7 @@ header .menu-items2 .contact-shop{
     line-height:1.3rem;
     cursor:pointer;
 }
-.pp-XM4VETAF6SJRA:hover, .pp-MLEZFY9M7R4VE:hover{
+.pp-XM4VETAF6SJRA:hover, .pp-MLEZFY9M7R4VE:hover, .pp-H8LYVDHXCD732:hover, .pp-H6KH2AZEKSNCJ:hover{
     background-color: var(--soft-accent-color);
     color: var(--light-color);
     transition: all 0.5s ease;
@@ -1822,7 +1851,7 @@ header .menu-items2 .contact-shop{
 }
 
 @media screen and (max-width: 480px) {
-    .pp-XM4VETAF6SJRA, .pp-MLEZFY9M7R4VE{
+    .pp-XM4VETAF6SJRA, .pp-MLEZFY9M7R4VE, .pp-H8LYVDHXCD732, .pp-H6KH2AZEKSNCJ{
         min-width: 7rem;
         height: 2rem;
         font-size: .9rem;
@@ -1856,7 +1885,7 @@ header .menu-items2 .contact-shop{
     text-transform: uppercase;
 }
 .thanks p{
-    font-size: clamp(1.25rem, -1.75rem + 7.3333vw, 1.75rem);
+    font-size: clamp(1rem, -1.75rem + 7.3333vw, 1.25rem);
     color: var(--light-color);
     margin: 0 20vw;
     font-weight: lighter;
